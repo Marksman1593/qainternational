@@ -1,0 +1,87 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    height: 8%;
+    width: 100%;
+    border-bottom: 1px solid #1d1d1f;
+}
+
+.logo-box{
+    flex: 15%;
+    height: 100%;
+    width: 15%;
+    border-right: 1px solid #1d1d1f;
+}
+
+.main-box{
+    flex: 85%;
+    height: 100%;
+    width: 84%;
+    margin: 0;
+}
+
+.top-box{
+    width: 100%;
+    height: 30%;
+    background-color: #006600;
+}
+
+.bottom-box{
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+
+.menu-box{
+    flex: 80%;
+}
+
+.call-box{
+    flex: 20%;
+    border-left: 1px solid #1d1d1f;
+}
+
+.slider-box{
+    width: 100%;
+    height: 92%;
+    background-color: #d7d7d7;
+    border-bottom: 1px solid #1d1d1f;
+}
+
+.about-box{
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #1d1d1f;
+}
+
+.services-box{
+    width: 100%;
+    height: 90%;
+    background-color: #d7d7d7;
+    border-bottom: 1px solid #1d1d1f;
+}
+
+.contact-box{
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #1d1d1f;
+}
+
+.footer{
+    width: 100%;
+    height: 47.5%;
+    background-color: #d7d7d7;
+}
+
+.bottom-tag{
+    width: 100%;
+    height: 2.5%;
+    background-color: #006600;
+}
+
