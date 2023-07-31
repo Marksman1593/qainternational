@@ -11,65 +11,105 @@ body{
 }
 
 .logo-box{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     flex: 15%;
     height: 100%;
-    width: 15%;
+    /* width: 17%; */
     border-right: 1px solid #1d1d1f;
+}
+
+.logo-box img{
+    width: 90%;
+    height: auto;
+    margin: 1%;
 }
 
 .main-box{
     flex: 85%;
     height: 100%;
-    width: 84%;
+    width: 80%;
     margin: 0;
 }
 
 .top-box{
+    position: relative;
     width: 100%;
-    height: 30%;
+    height: 40%;
     background-color: #006600;
+}
+
+.motto{
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    padding-left: 1%;
+    font-weight: 1000;
+    font-size: 12px;
+    color: white;
+}
+
+.SM-icons{
+    display: inline-block;
+    position: absolute;
+    height: 90%;
+    width: 15%;
+    top: 1;
+    right: 15%;
+    /* background-color: black; */
+}
+
+.SM-icons svg{
+    margin-left: 10%;
+    height: 100%;
+    width: auto;
+}
+
+.email{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 17.5%;
+}
+
+.email svg{
+    display: inline;
+    position: relative;
+    height: 75%;
+    width: auto;
+    top: 10%;
+    margin-left: 2.5%;
+}
+
+.email p{
+    display: inline;
+    position: absolute;
+    top: -5;
+    padding-left: 2.5%;
+    font-weight: 1000;
+    font-size: 12px;
+    color: white;
 }
 
 .bottom-box{
     display: flex;
     width: 100%;
-    height: 70%;
+    height: 60%;
 }
 
 .menu-box{
-    flex: 80%;
+    flex: 82.5%;
 }
 
 .call-box{
-    flex: 20%;
+    flex: 17.5%;
     border-left: 1px solid #1d1d1f;
 }
 
-.slider-box{
+.box{
     width: 100%;
     height: 92%;
-    background-color: #d7d7d7;
-    border-bottom: 1px solid #1d1d1f;
-}
-
-.about-box{
-    width: 100%;
-    height: 90%;
-    background-color: #ffffff;
-    border-bottom: 1px solid #1d1d1f;
-}
-
-.services-box{
-    width: 100%;
-    height: 90%;
-    background-color: #d7d7d7;
-    border-bottom: 1px solid #1d1d1f;
-}
-
-.contact-box{
-    width: 100%;
-    height: 90%;
-    background-color: #ffffff;
     border-bottom: 1px solid #1d1d1f;
 }
 
