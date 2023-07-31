@@ -86,10 +86,11 @@ body{
     margin-left: 2.5%;
 }
 
-.email p{
+.email a{
+    cursor: pointer;
     display: inline;
     position: absolute;
-    top: -5;
+    top: 5;
     padding-left: 2.5%;
     font-weight: 1000;
     font-size: 12px;
@@ -131,6 +132,38 @@ body{
     height: 90%;
 }
 
+.call-box svg:hover circle{
+    fill: white;
+}
+
+.call-box svg:hover #p1{
+    fill: white;
+    stroke: #006600;
+}
+
+.call-box svg:hover #p2{
+    fill: white;
+    stroke: #006600;
+}
+
+.call-box svg:hover #p3{
+    fill: #006600;
+    stroke: #006600;
+}
+
+.call-box svg:hover #p4{
+    fill: white;
+    stroke: #006600;
+}
+
+.call-box svg:hover #p5,
+.call-box svg:hover #p6,
+.call-box svg:hover #p7
+{
+    fill: #006600;
+    stroke: #006600;
+}
+
 .call{
     width: 80%;
 }
@@ -145,9 +178,15 @@ body{
 }
 
 .call a{
+    cursor: pointer;
     font-size: 20px;
     font-weight: 1000;
     margin-left: 5%;
+    transition: color 0.25s ease-in-out;
+}
+
+.call a:hover{
+    color: #006600;
 }
 
 .box{
