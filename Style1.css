@@ -60,6 +60,10 @@ body{
     /* background-color: black; */
 }
 
+.SM-icons a{
+    cursor: pointer;
+}
+
 .SM-icons svg{
     margin-left: 10%;
     height: 100%;
@@ -99,12 +103,51 @@ body{
 }
 
 .menu-box{
+    display: flex;
     flex: 82.5%;
 }
 
+.links{
+    width: 100%;
+    margin: auto 2%;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.links a{
+    cursor: pointer;
+    margin-right: 50;
+}
+
 .call-box{
+    display: flex;
     flex: 17.5%;
     border-left: 1px solid #1d1d1f;
+}
+
+.call-box svg{
+    margin: auto 4%;
+    width: auto;
+    height: 90%;
+}
+
+.call{
+    width: 80%;
+}
+
+.call p{
+    
+    font-size: 14px;
+    font-weight: 1000;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+}
+
+.call a{
+    font-size: 20px;
+    font-weight: 1000;
+    margin-left: 5%;
 }
 
 .box{
