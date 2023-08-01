@@ -240,49 +240,78 @@ body{
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
+  max-height: 1080px;
   position: relative;
   margin: auto;
 }
 
+.mySlides img{
+    max-height: 900px;
+}
+
 /* Hide the images by default */
-/* .mySlides {
+.mySlides {
   display: none;
-} */
+}
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: auto;
+  top: 47.5%;
+  width: 55px;
+  height: 55px;
   margin-top: -22px;
-  padding: 16px;
+  padding: 2px 10px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 1000;
+  font-size: 28px; 
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border: 3px solid #fff;
+  border-radius: 50%;
   user-select: none;
+}
+
+.cls-1{
+    transition: 0.5s ease-in-out;
+}
+.cls-2{
+    transition: 0.5s ease-in-out;
+}
+
+.SM-icons a:hover .cls-1{
+    fill: #006600;
+}
+
+.SM-icons a:hover .cls-2{
+    fill: #ffffff;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: 10%;
+  border-radius: 50%;
 }
+
+.prev {
+    left: 10%;
+    border-radius: 50%;
+  }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #1d1d1f;
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 1000;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 40%;
   width: 100%;
   text-align: center;
 }
@@ -315,7 +344,7 @@ body{
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
 }
 
 @keyframes fade {
