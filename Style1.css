@@ -64,6 +64,21 @@ body{
     cursor: pointer;
 }
 
+.cls-1{
+    transition: 0.5s ease-in-out;
+}
+.cls-2{
+    transition: 0.5s ease-in-out;
+}
+
+.SM-icons a:hover .cls-1{
+    fill: #006600;
+}
+
+.SM-icons a:hover .cls-2{
+    fill: #ffffff;
+}
+
 .SM-icons svg{
     margin-left: 10%;
     height: 100%;
@@ -231,7 +246,7 @@ body{
 
 .box{
     width: 100%;
-    height: 92%;
+    height: 900px;
     border-bottom: 1px solid #1d1d1f;
 }
 
@@ -240,7 +255,7 @@ body{
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
-  max-height: 1080px;
+  max-height: 1000px;
   position: relative;
   margin: auto;
 }
@@ -272,20 +287,7 @@ body{
   user-select: none;
 }
 
-.cls-1{
-    transition: 0.5s ease-in-out;
-}
-.cls-2{
-    transition: 0.5s ease-in-out;
-}
 
-.SM-icons a:hover .cls-1{
-    fill: #006600;
-}
-
-.SM-icons a:hover .cls-2{
-    fill: #ffffff;
-}
 
 /* Position the "next button" to the right */
 .next {
