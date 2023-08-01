@@ -7,7 +7,7 @@ body{
     display: flex;
     height: 8%;
     width: 100%;
-    border-bottom: 1px solid #1d1d1f;
+    /* border-bottom: 1px solid #1d1d1f; */
 }
 
 .logo-box{
@@ -154,7 +154,7 @@ body{
     bottom: -1px; 
     width: 0; 
     height: 3px; 
-    background-color: #000; 
+    /* background-color: #000;  */
     transition: 0.3s ease; 
 }
 
@@ -187,33 +187,33 @@ body{
     transition: 0.25s ease-in-out;
 }
 
-.call-box svg:hover circle{
+.call-box:hover circle{
     fill: white;
 }
 
-.call-box svg:hover #p1{
-    fill: white;
-    stroke: #006600;
-}
-
-.call-box svg:hover #p2{
+.call-box:hover #p1{
     fill: white;
     stroke: #006600;
 }
 
-.call-box svg:hover #p3{
+.call-box:hover #p2{
+    fill: white;
+    stroke: #006600;
+}
+
+.call-box:hover #p3{
     fill: #006600;
     stroke: #006600;
 }
 
-.call-box svg:hover #p4{
+.call-box:hover #p4{
     fill: white;
     stroke: #006600;
 }
 
-.call-box svg:hover #p5,
-.call-box svg:hover #p6,
-.call-box svg:hover #p7
+.call-box:hover #p5,
+.call-box:hover #p6,
+.call-box:hover #p7
 {
     fill: #006600;
     stroke: #006600;
@@ -247,7 +247,7 @@ body{
 .box{
     width: 100%;
     height: 900px;
-    border-bottom: 1px solid #1d1d1f;
+    /* border-bottom: 1px solid #1d1d1f; */
 }
 
 * {box-sizing:border-box}
@@ -307,8 +307,8 @@ body{
 
 /* Caption text */
 .text {
-    font-family: 'Poppins', sans-serif;
   color: #ffffff;
+  font-family: 'Poppins', sans-serif;
   font-size: 80px;
   font-weight: 1000;
   padding: 8px 12px;
@@ -352,6 +352,87 @@ body{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.abouts{
+    position: absolute;
+    
+}
+
+.about{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #000; */
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+}
+
+.pics{
+    position: relative;
+    top: 2.5%;
+    left: 2.5%;
+    width: 80%;
+    height: 95%;
+    margin-right: 5%;
+    /* border: 5px solid white; */
+}
+
+.pic{
+    width: 47.5%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.unfocus{
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    /* top: 10; */
+    height: 30%;
+    width: 100%;
+}
+.focus{
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+
+.about .text{
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    padding: 1% 4%;
+    text-align: justify;
+    height: 100%;
+    top: 0;
+    color: #1d1d1f;
+    /* border: 5px solid blue; */
+    /* background-color: #000; */
+}
+
+.about .text h6{
+    font-size: 20px;
+}
+.about .text h6::after{
+    content: "";
+    position: absolute;
+    top: 11%;
+    left: 15%;
+    bottom: -1px; 
+    width: 15%; 
+    height: 3px; 
+    background-color: #1d1d1f; 
+    transition: 0.3s ease; 
+}
+
+
+.about .text p{
+    font-size: 20px;
 }
 
 
