@@ -6,6 +6,7 @@ body{
 .header{
     display: flex;
     height: 8vh;
+    min-height: 8vh;
     width: 100%;
     z-index: 5;
     background-color: #fff;
@@ -459,6 +460,11 @@ body{
 .service{
     width: 17.5%;
     height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.service:hover{
+    transform: scale(1.02) translateY(-5%);
 }
 
 .service .image{
@@ -469,6 +475,12 @@ body{
     border-radius: 50%;
     z-index: 1;
     background-color: #d7d7d7;
+    transition: all 0.5s ease-in-out;
+}
+
+.service:hover .image{
+    background-color: #006600;
+    transform: scale(1.25);
 }
 
 .service .image1{
@@ -480,15 +492,44 @@ body{
     border-radius: 50%;
     z-index: 2;
     background-color: fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.service:hover .image1{
+    /* background-color: #000; */
 }
 
 .ser{
     position: relative;
+    overflow: hidden    ;
     width: 100%;
     height: 90%;
     transform: translateY(-17%);
     background-color: #d7d7d7;
     border-radius: 5%;
+    transition: all 0.3s ease-in-out;
+}
+
+.ser1{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: #d7d7d7;
+}
+
+.ser2{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: #006600;
+}
+
+.service:hover .ser1{
+    transform: translateY(-100%);
+}
+
+.service:hover .ser2{
+    transform: translateY(-100%);
 }
 
 .reviews{
