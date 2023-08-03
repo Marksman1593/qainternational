@@ -480,7 +480,7 @@ body{
 
 .service:hover .image{
     background-color: #006600;
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
 
 .service .image1{
@@ -493,10 +493,6 @@ body{
     z-index: 2;
     background-color: fff;
     transition: all 0.5s ease-in-out;
-}
-
-.service:hover .image1{
-    /* background-color: #000; */
 }
 
 .ser{
