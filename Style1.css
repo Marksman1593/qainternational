@@ -7,8 +7,16 @@ body{
     display: flex;
     height: 8%;
     width: 100%;
+    background-color: #fff;
     /* border-bottom: 1px solid #1d1d1f; */
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    /* width: 100% */
+  }
 
 .logo-box{
     display: flex;
@@ -426,6 +434,7 @@ body{
     bottom: -1px; 
     width: 15%; 
     height: 3px; 
+    border-radius: 5px;
     background-color: #1d1d1f; 
     transition: 0.3s ease; 
 }
@@ -435,6 +444,84 @@ body{
     font-size: 20px;
 }
 
+.services{
+    width: 100%;
+    height: 60%;
+}
+
+.services h6{
+    font-size: 40px;
+    margin: 2% auto;
+    padding-left: 10%;
+}
+
+.services h6::after{
+    display: block;
+    content: "";
+    position: relative;
+    width: 40%; 
+    height: 3px; 
+    border-radius: 5px;
+    background-color: #1d1d1f; 
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.service{
+    width: 17.5%;
+    height: 100%;
+}
+
+.service .image{
+    position: relative;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: #1d1d1f;
+}
+
+.ser{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    transform: translateY(-10%);
+    background-color: #d7d7d7;
+    border-radius: 5%;
+}
+
+.reviews{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+.reviews .image{
+    position: relative;
+    margin: 0 0 0 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: #d7d7d7;
+}
+
+.reviews .text{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 85%;
+    transform: translateY(-15%);
+    background-color: #1d1d1f;
+}
 
 .footer{
     width: 100%;
