@@ -5,17 +5,17 @@ body{
 
 .header{
     display: flex;
-    height: 8%;
+    height: 8vh;
     width: 100%;
+    z-index: 1;
     background-color: #fff;
-    /* border-bottom: 1px solid #1d1d1f; */
 }
 
 .sticky {
     position: fixed;
     top: 0;
     z-index: 2;
-    /* width: 100% */
+    border-bottom: 1px solid #1d1d1f;
   }
 
 .logo-box{
@@ -24,7 +24,6 @@ body{
     align-items: center;
     flex: 15%;
     height: 100%;
-    /* width: 17%; */
     border-right: 1px solid #1d1d1f;
 }
 
@@ -65,7 +64,6 @@ body{
     width: 15%;
     top: 1;
     right: 15%;
-    /* background-color: black; */
 }
 
 .SM-icons a{
@@ -162,7 +160,6 @@ body{
     bottom: -1px; 
     width: 0; 
     height: 3px; 
-    /* background-color: #000;  */
     transition: 0.3s ease; 
 }
 
@@ -255,12 +252,10 @@ body{
 .box{
     width: 100%;
     height: 900px;
-    /* border-bottom: 1px solid #1d1d1f; */
 }
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 100%;
   max-height: 1000px;
@@ -272,12 +267,10 @@ body{
     max-height: 900px;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -295,9 +288,6 @@ body{
   user-select: none;
 }
 
-
-
-/* Position the "next button" to the right */
 .next {
   right: 10%;
   border-radius: 50%;
@@ -308,12 +298,10 @@ body{
     border-radius: 50%;
   }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: #1d1d1f;
 }
 
-/* Caption text */
 .text {
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
@@ -326,7 +314,6 @@ body{
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -335,7 +322,6 @@ body{
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -351,7 +337,6 @@ body{
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 0.5s;
@@ -371,7 +356,6 @@ body{
     position: relative;
     display: flex;
     justify-content: space-between;
-    /* background-color: #000; */
     top: 5%;
     left: 10%;
     width: 80%;
@@ -385,7 +369,6 @@ body{
     width: 80%;
     height: 95%;
     margin-right: 5%;
-    /* border: 5px solid white; */
 }
 
 .pic{
@@ -399,7 +382,6 @@ body{
     display: flex;
     justify-content: space-between;
     left: 0;
-    /* top: 10; */
     height: 30%;
     width: 100%;
 }
@@ -419,18 +401,17 @@ body{
     height: 100%;
     top: 0;
     color: #1d1d1f;
-    /* border: 5px solid blue; */
-    /* background-color: #000; */
 }
 
 .about .text h6{
+    cursor: default;
     font-size: 20px;
 }
 .about .text h6::after{
     content: "";
     position: absolute;
     top: 11%;
-    left: 15%;
+    left: 8%;
     bottom: -1px; 
     width: 15%; 
     height: 3px; 
@@ -441,6 +422,7 @@ body{
 
 
 .about .text p{
+    cursor: default;
     font-size: 20px;
 }
 
@@ -451,6 +433,7 @@ body{
 
 .services h6{
     font-size: 40px;
+    cursor: default;
     margin: 2% auto;
     padding-left: 10%;
 }
@@ -481,18 +464,18 @@ body{
 .service .image{
     position: relative;
     margin: 0 auto;
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     z-index: 1;
-    background-color: #1d1d1f;
+    background-color: #d7d7d7;
 }
 
 .ser{
     position: relative;
     width: 100%;
     height: 90%;
-    transform: translateY(-10%);
+    transform: translateY(-17%);
     background-color: #d7d7d7;
     border-radius: 5%;
 }
@@ -501,14 +484,13 @@ body{
     width: 100%;
     height: 40%;
     overflow: hidden;
-    border: 3px solid black;
 }
 
 .reviews .image{
     position: relative;
     margin: 0 0 0 10%;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     z-index: 1;
     background-color: #d7d7d7;
@@ -519,7 +501,7 @@ body{
     top: 0;
     width: 100%;
     height: 85%;
-    transform: translateY(-15%);
+    transform: translateY(-20%);
     background-color: #1d1d1f;
 }
 
