@@ -7,7 +7,7 @@ body{
     display: flex;
     height: 8vh;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     background-color: #fff;
 }
 
@@ -471,6 +471,17 @@ body{
     background-color: #d7d7d7;
 }
 
+.service .image1{
+    position: relative;
+    margin: 0 auto;
+    top: 5px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: fff;
+}
+
 .ser{
     position: relative;
     width: 100%;
@@ -502,7 +513,33 @@ body{
     width: 100%;
     height: 85%;
     transform: translateY(-20%);
-    background-color: #1d1d1f;
+    background-color: #000;
+}
+
+.reviews .text h6{
+    text-align: left;
+    padding: 0 17.5%;
+    cursor: default;
+    font-size: 20px;
+}
+
+.reviews .text h6::after{
+    display: block;
+    content: "";
+    position: relative;
+    width: 20%; 
+    height: 3px; 
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+.reviews .text p{
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+    cursor: default;
+    font-size: 20px;
 }
 
 .footer{
