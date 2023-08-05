@@ -305,7 +305,7 @@ body{
 
 .text {
   color: #ffffff;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   font-size: 80px;
   font-weight: 1000;
   padding: 8px 12px;
@@ -391,15 +391,15 @@ body{
 
 .about .text h6{
     cursor: default;
-    font-size: 20px;
+    font-size: 30px;
 }
 .about .text h6::after{
     content: "";
     position: absolute;
-    top: 11%;
+    top: 15%;
     left: 8%;
     bottom: -1px; 
-    width: 15%; 
+    width: 20%; 
     height: 3px; 
     border-radius: 5px;
     background-color: #1d1d1f; 
@@ -410,6 +410,7 @@ body{
 .about .text p{
     cursor: default;
     font-size: 20px;
+    font-weight: normal;
 }
 
 .services{
@@ -439,7 +440,7 @@ body{
     justify-content: space-between;
     width: 85%;
     height: 70%;
-    margin: 0 auto;
+    margin: 2.5% auto;
 }
 
 .service{
@@ -650,7 +651,7 @@ body{
 .inner-text2{
     width: 80%;
     height: 70%;
-    font-size: 100%;
+    font-size: 0.85vw;
     font-weight: bolder;
     color: rgba(29, 29, 31, 1);
 }
@@ -704,7 +705,7 @@ body{
     font-weight: bold;
     font-size: 25px;
     padding: 0 2%;
-    margin-top: 5%;
+    margin-top: 7%;
     transition: all 0.25s ease-in-out;
 }
 
@@ -714,17 +715,105 @@ body{
     color: #006600;
 }
 
-
-
 .footer{
+    display: block;
     width: 100%;
     height: 47.5%;
+    padding-top: 2.5%;
     background-color: #d7d7d7;
+}
+
+.vsections{
+    position: relative;
+    display: flex;
+    width: 75%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.vsection{
+    display: flex;
+    height: 100%;
+    width: 25%;
+}
+
+.vsection:first-child{
+    display: block;
+}
+
+.line{
+    width: 3px;
+    border-radius: 10px;
+    margin-right: 2.5%;
+    background-color: #1d1d1f;
+}
+
+.vsection img{
+    width: 80%;
+    height: auto;
+    margin: 2.5% 0;
+}
+
+.vsections .vsection p{
+    color: #1d1d1f;
+    height: 40%;
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.8vw;
+}
+
+.vsections .vsection:first-child p{
+    color: #1d1d1f;
+    height: 40%;
+    font-weight: bolder;
+    margin-bottom: 0;
+    font-size: 1vw;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 20%;
+}
+
+.footer-icons a{
+    cursor: pointer;
+    width: 30%;
+    height: 80%;
+}
+
+.footer-icons a svg{
+    height: 100%;
+    width: auto;
+}
+
+.cls-1{
+    transition: 0.5s ease-in-out;
+}
+.cls-2{
+    transition: 0.5s ease-in-out;
+}
+
+.footer-icons a:hover .cls-1{
+    fill: #006600;
+}
+
+.footer-icons a:hover .cls-2{
+    fill: #ffffff;
 }
 
 .bottom-tag{
     width: 100%;
     height: 2.5%;
     background-color: #006600;
+}
+
+.TM{
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    color: #fff;
+    font-size: 0.8vw;
 }
 
