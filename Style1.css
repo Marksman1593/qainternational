@@ -355,6 +355,8 @@ body{
     width: 80%;
     height: 95%;
     margin-right: 5%;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
 }
 
 .pic{
@@ -365,9 +367,11 @@ body{
 }
 
 .unfocus{
+    position: relative;
     display: flex;
     justify-content: space-between;
     left: 0;
+    top: 2.5%;
     height: 30%;
     width: 100%;
 }
@@ -378,7 +382,7 @@ body{
 }
 
 
-.about .text{
+.text1{
     position: relative;
     width: 100%;
     max-width: 750px;
@@ -387,13 +391,15 @@ body{
     height: 100%;
     top: 0;
     color: #1d1d1f;
+    transform: translateX(100%);
+    transition: all 1s ease-in-out;
 }
 
-.about .text h6{
+.about .text1 h6{
     cursor: default;
     font-size: 30px;
 }
-.about .text h6::after{
+.about .text1 h6::after{
     content: "";
     position: absolute;
     top: 15%;
@@ -407,7 +413,7 @@ body{
 }
 
 
-.about .text p{
+.about .text1 p{
     cursor: default;
     font-size: 20px;
     font-weight: normal;
@@ -556,13 +562,28 @@ body{
     background-color: #fff;
 }
 
+.textSlides{
+    display: none;
+}
 
-.reviews .text p{
+.textSlides q{
     width: 80%;
-    text-align: justify;
+    display: block;
+    text-align: center;
     margin: 0 auto;
     cursor: default;
     font-size: 20px;
+    font-style: italic;
+}
+
+.textSlides p{
+    width: 60%;
+    display: block;
+    text-align: right;
+    margin: 0 auto;
+    cursor: default;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .content{
@@ -817,3 +838,10 @@ body{
     font-size: 0.8vw;
 }
 
+.visible{
+    transform: translateX(0%);
+}
+
+.initiate{
+    transform: scale(1.02) translateY(-5%);
+}

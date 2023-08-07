@@ -44,3 +44,144 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+      }
+  });
+  
+}
+
+// Create an Intersection Observer instance for .pics
+const observer = new IntersectionObserver(handleIntersection, { threshold: 0.01 });
+const observer1 = new IntersectionObserver(handleIntersection, { threshold: 0.01});
+
+const picsElement = document.querySelector('.pics');
+observer.observe(picsElement);
+
+const textElement = document.querySelector('.text1');
+observer1.observe(textElement);
+
+
+function handleIntersection1(entries, observer) {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          
+          entry.target.classList.add('initiate');
+          
+          // Add the class for 1 second, then remove it
+          setTimeout(() => {
+              entry.target.classList.remove('initiate');
+          }, 1000);
+          
+          observer.unobserve(entry.target);
+      }
+  });
+}
+
+// Create an Intersection Observer instance for .pics
+const observer2 = new IntersectionObserver(handleIntersection1, { threshold: 0.5 });
+
+// Observe the .pics element
+const serviceElements = document.querySelectorAll('.service');
+serviceElements.forEach(element => {
+    observer2.observe(element);
+});
+
+var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 100) || 4000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+ 
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+ 
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+ 
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+ 
+  var that = this;
+  var delta = 50;
+ 
+  if (this.isDeleting) { delta /= 2; }
+ 
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    plusSlide(1);
+    this.loopNum++;
+    delta = 50;
+  }
+ 
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+ 
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+
+var slidesIndex = 1;
+showSlide(slidesIndex);
+
+function plusSlide(n) {
+  n=1;
+  showSlide(slidesIndex += n);
+}
+
+function currentSlides(n) {
+  showSlide(slidesIndex = n);
+}
+
+function showSlide(n) {
+  var i;
+  var slide = document.getElementsByClassName("textSlides");
+  if (n > slide.length) {slidesIndex = 1}
+    if (n < 1) {slidesIndex = slide.length}
+    for (i = 0; i < slide.length; i++) {
+      slide[i].style.display = "none";
+    }
+  slide[slidesIndex-1].style.display = "block";
+}
+
+// setInterval(plusSlide, 5600);
+
+function handleIntersection2(entries, observer) {
+  observer3.unobserve(entry.target);
+}
+
+const observer3 = new IntersectionObserver(handleIntersection2, { threshold: 1 });
+
+// Observe the .pics element
+const reviewElements = document.querySelectorAll('.textSlides');
+reviewElements.forEach(element => {
+    observer3.observe(element);
+});
