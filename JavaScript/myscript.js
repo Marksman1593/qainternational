@@ -172,16 +172,24 @@ function showSlide(n) {
   slide[slidesIndex-1].style.display = "block";
 }
 
-// setInterval(plusSlide, 5600);
-
-function handleIntersection2(entries, observer) {
-  observer3.unobserve(entry.target);
-}
-
-const observer3 = new IntersectionObserver(handleIntersection2, { threshold: 1 });
-
-// Observe the .pics element
-const reviewElements = document.querySelectorAll('.textSlides');
-reviewElements.forEach(element => {
-    observer3.observe(element);
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the elements
+  const inactiveElements = document.querySelectorAll('.inactive');
+  const activeElement = document.getElementById('active');
+  
+  
+  // Add mouseover event to each inactive element
+  inactiveElements.forEach(function(inactive) {
+    inactive.addEventListener('mouseover', function() {
+      // Change the style of the active element
+      activeElement.style.color = '#1d1d1f';
+      
+    });
+    
+    // Add mouseout event to each inactive element (optional)
+    inactive.addEventListener('mouseout', function() {
+      // Restore the original style of the active element
+      activeElement.style.color = '#006600';
+    });
+  });
 });
