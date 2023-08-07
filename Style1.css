@@ -546,19 +546,20 @@ body{
     background-color: #000;
 }
 
-.heading{
+.heading {
+    margin-left: 20%;
     width: fit-content;
 }
 
-.reviews .text h6{
-    width: fit-content;
+.heading h6 {
     text-align: left;
-    padding: 0 17.5%;
     cursor: default;
     font-size: 20px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
 }
 
-.reviews .text h6::after{
+.reviews .heading h6::after{
     display: block;
     content: "";
     position: relative;
