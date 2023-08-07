@@ -546,7 +546,12 @@ body{
     background-color: #000;
 }
 
+.heading{
+    width: fit-content;
+}
+
 .reviews .text h6{
+    width: fit-content;
     text-align: left;
     padding: 0 17.5%;
     cursor: default;
@@ -557,7 +562,7 @@ body{
     display: block;
     content: "";
     position: relative;
-    width: 20%; 
+    width: 100%; 
     height: 3px; 
     border-radius: 5px;
     background-color: #fff;
