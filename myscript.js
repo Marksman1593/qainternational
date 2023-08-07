@@ -56,8 +56,8 @@ function handleIntersection(entries, observer) {
 }
 
 // Create an Intersection Observer instance for .pics
-const observer = new IntersectionObserver(handleIntersection, { threshold: 0.01 });
-const observer1 = new IntersectionObserver(handleIntersection, { threshold: 0.01});
+const observer = new IntersectionObserver(handleIntersection, { threshold: 0.05 });
+const observer1 = new IntersectionObserver(handleIntersection, { threshold: 0.05});
 
 const picsElement = document.querySelector('.pics');
 observer.observe(picsElement);
