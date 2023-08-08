@@ -260,20 +260,20 @@ body{
 }
 .box{
     width: 100%;
-    height: 900px;
+    height: 100vh;
 }
 
 * {box-sizing:border-box}
 
 .slideshow-container {
   max-width: 100%;
-  max-height: 1000px;
+  max-height: 800px;
   position: relative;
   margin: auto;
 }
 
 .mySlides img{
-    max-height: 900px;
+    max-height: 90vh;
 }
 
 .mySlides {
@@ -405,13 +405,14 @@ body{
 
 .about .text1 h6{
     cursor: default;
-    font-size: 30px;
+    margin-bottom: 5vh;
+    font-size: 1.75vw;
 }
 
 .about .text1 h6::after{
     content: "";
     position: absolute;
-    top: 15%;
+    top: 15vh;
     left: 8%;
     bottom: -1px; 
     width: 20%; 
@@ -423,7 +424,7 @@ body{
 
 .about .text1 p{
     cursor: default;
-    font-size: 20px;
+    font-size: 2.5vh;
     font-weight: normal;
 }
 
@@ -433,9 +434,9 @@ body{
 }
 
 .services h6{
-    font-size: 40px;
+    font-size: 2vw;
     cursor: default;
-    margin: 2% auto;
+    margin: 2vh auto;
     padding-left: 10%;
 }
 
@@ -443,7 +444,7 @@ body{
     display: block;
     content: "";
     position: relative;
-    width: 40%; 
+    width: 30vw; 
     height: 3px; 
     border-radius: 5px;
     background-color: #1d1d1f; 
@@ -453,13 +454,13 @@ body{
     display: flex;
     justify-content: space-between;
     width: 85%;
-    height: 70%;
-    margin: 2.5% auto;
+    height: 50vh;
+    margin: 2.5vh auto;
 }
 
 .service{
     width: 17.5%;
-    height: 100%;
+    height: 10vh;
     transition: all 0.3s ease-in-out;
 }
 
@@ -470,12 +471,18 @@ body{
 .service .image{
     position: relative;
     margin: 0 auto;
-    width: 120px;
-    height: 120px;
+    width: 8vw;
+    height: 8vw;
     border-radius: 50%;
     z-index: 1;
     background-color: #d7d7d7;
     transition: all 0.5s ease-in-out;
+}
+
+.service.image::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 .service:hover .image{
@@ -487,8 +494,8 @@ body{
     position: relative;
     margin: 0 auto;
     top: 5px;
-    width: 110px;
-    height: 110px;
+    width: 7vw;
+    height: 7vw;
     border-radius: 50%;
     z-index: 2;
     background-color: fff;
@@ -497,18 +504,18 @@ body{
 
 .ser{
     position: relative;
-    overflow: hidden    ;
+    overflow: hidden;
     width: 100%;
-    height: 90%;
+    height: 50vh;
     transform: translateY(-17%);
     background-color: #d7d7d7;
-    border-radius: 5%;
+    border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
 
 .ser1{
     width: 100%;
-    height: 100%;
+    height: 50vh;
     transition: all 0.3s ease-in-out;
     background-color: #d7d7d7;
 }
@@ -537,8 +544,8 @@ body{
 .reviews .image{
     position: relative;
     margin: 0 0 0 10%;
-    width: 140px;
-    height: 140px;
+    width: 9vw;
+    height: 9vw;
     border-radius: 50%;
     z-index: 1;
     background-color: #d7d7d7;
@@ -561,7 +568,7 @@ body{
 .heading h6 {
     text-align: left;
     cursor: default;
-    font-size: 20px;
+    font-size: 1.5vw;
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflowing text */
 }
@@ -603,7 +610,7 @@ body{
 .content{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 75vw;
     height: 97.5%;
     margin: 0.75% auto 0 auto;
 }
@@ -615,7 +622,7 @@ body{
 
 
 .left h6{
-    font-size: 30px;
+    font-size: 1.75vw;
     cursor: default;
     margin: 0.5% auto;
     color: #1d1d1f;
@@ -625,7 +632,7 @@ body{
     display: block;
     content: "";
     position: relative;
-    width: 70%; 
+    width: 100%; 
     height: 3px; 
     border-radius: 5px;
     background-color: #1d1d1f; 
@@ -671,14 +678,14 @@ body{
 .inner-text{
     display: flex;
     width: 92.5%;
-    margin-top: 0.5%;
+    margin-top: 1.5vh;
     height: 100%;
 }
 
 .inner-text1{
     width: 30%;
     height: 50%;
-    font-size: 100%;
+    font-size: 120vw;
     font-weight: bolder;
     color: rgba(29, 29, 31, 0.75);
 }
@@ -686,7 +693,7 @@ body{
 .inner-text2{
     width: 80%;
     height: 70%;
-    font-size: 0.85vw;
+    font-size: 1vw;
     font-weight: bolder;
     color: rgba(29, 29, 31, 1);
 }
@@ -699,13 +706,14 @@ body{
 }
 
 .right h6{
-    font-size: 25px;
+    font-size: 1.75vw;
     cursor: default;
     margin: 0.5% auto;
     color: rgba(29, 29, 31, 0.75);
 }
 
 .inputs h1{
+    font-size: 2.25vw;
     margin: 2.5% 0 1% 2%;
 }
 
@@ -715,7 +723,7 @@ body{
     border: none;
     border-radius: 5px;
     background-color: #d7d7d7;
-    font-size: 25px;
+    font-size: 1.5vw;
     padding: 0 2%;
 }
 
@@ -725,7 +733,7 @@ body{
     border: none;
     border-radius: 5px;
     background-color: #d7d7d7;
-    font-size: 25px;
+    font-size: 1.5vw;
     padding: 0 2%;
 }
 
@@ -738,7 +746,7 @@ body{
     background-color: #006600;
     color: #fff;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5vw;
     padding: 0 2%;
     margin-top: 7%;
     transition: all 0.25s ease-in-out;
