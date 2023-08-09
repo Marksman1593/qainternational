@@ -348,7 +348,7 @@ body{
     width: 70vw;
     height: 98%;
     margin: 2vh auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .heading{
@@ -397,43 +397,119 @@ h1::after{
 }
 
 .categories{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
     display: flex;
     width: 100%;
     height: 8vh;
     margin: 1.5% 0;
-    border-radius: 5px;
     font-size: 2vw;
     background-color: #d7d7d7;
 }
 
-.categories p{
-    margin: 1vh 1vw;
+.slide1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #006600;
+    transform: translateX(-100%);
+    transition: all 1s ease-in-out;
 }
 
-.line{
-    width: 5px;
+.categories p{
+    margin: 1vh 1vw;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.lines{
+    position: relative;
+    width: 3px;
     height: 100%;
-    background-color: #1d1d1f;
+    margin-right: 2.5%;
+    background-color: #006600;
+    /* z-index: 1; */
 }
 
 .categories svg{
     width: auto;
     height: 60%;
     margin-top: 1.5vh;
+    z-index: 1;
 }
 
 .categories svg .cls-1{
     fill: #1d1d1f;
+    transition: all 0.5s ease-in-out;
 }
 
 .categories svg .cls-3{
     stroke: #1d1d1f;
+    transition: all 0.5s ease-in-out;
 }
+
+.categories:hover .slide1{
+    transform: translateX(0%);
+}
+
+.categories:hover svg .cls-1{
+    fill: #fff;
+}
+
+.categories:hover svg .cls-3{
+    stroke: #fff;
+}
+
+.categories:hover p{
+    color: #fff;
+}
+
+.categories.active .slide1{
+    transform: translateX(0%);
+}
+
+.categories.active svg .cls-1{
+    fill: #fff;
+}
+
+.categories.active svg .cls-3{
+    stroke: #fff;
+}
+
+.categories.active p{
+    color: #fff;
+}
+
 
 .right{
     width: 65vw;
     height: 100%;
+    padding: 0 2%;
     /* border: 1px solid black; */
+}
+
+.question{
+    width: 100%;
+    height: 8vh;
+    margin-top: 0.75vh;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    background-color: #d7d7d7;
+}
+
+.open{
+    height: 16vh;
+    padding-bottom: 0.5vh;
+}
+
+.top{
+    width: 100%;
+    height: 8vh;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    background-color: #0c61ab;
 }
 
 .footer{
