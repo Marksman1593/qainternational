@@ -1,19 +1,18 @@
-function openseseme(){
-    const question = document.getElementById('question');
-    question.classlist.toggle('open');
-}
-const colors = ["#006600", "#0c61ab"];
-let colorIndex = 0;
-var acc = document.getElementById('top');
-var i;
-acc.addEventListener("click", function() {
-    var ques = document.getElementById('question');
-    ques.classList.toggle("open");
-    this.style.backgroundColor = colors[colorIndex];
-
-  // Increment colorIndex and wrap around if necessary
-  colorIndex = (colorIndex + 1) % colors.length;
+const top1 = document.querySelectorAll('.top');
+top1.forEach(acc => {
+    acc.addEventListener("click", function() {
+        const ques = this.closest('.question');
+        ques.classList.toggle("open");
+        if(ques.classList.contains("open")){
+            console.log(acc.querySelector('.arrow').innerHTML = '-');
+            acc.style.backgroundColor = "#006600";
+        }else{
+            console.log(acc.querySelector('.arrow').innerHTML = '+');
+            acc.style.backgroundColor = "#0c61ab";
+        }
+    });
 });
+
 
 function toggleCategory(categoryId) {
     const categories = document.querySelectorAll('.categories');
@@ -39,14 +38,14 @@ function toggleCategory(categoryId) {
         const computedStyle = window.getComputedStyle(slide);
         const cls1 = category.querySelectorAll('.cls-1');
         cls1.forEach(cls => {
-            cls.style.fill ='#1d1d1f';
+            cls.style.fill ='';
         });
         const cls3 = category.querySelectorAll('.cls-3');
         cls3.forEach(cls => {
-            cls.style.stroke ='#1d1d1f';
+            cls.style.stroke ='';
         });
         const p = category.querySelector('.p');
-        p.style.color = "#1d1d1f";
+        p.style.color = "";
     }
 
     });
