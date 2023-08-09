@@ -415,7 +415,7 @@ h1::after{
     height: 100%;
     background-color: #006600;
     transform: translateX(-100%);
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .categories p{
