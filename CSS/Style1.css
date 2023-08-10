@@ -928,7 +928,13 @@ body{
     background-color: #d7d7d7;
 }
 
+.card h3{
+    margin: 2% 0;
+}
+
 .card p{
+    margin: 1% 0;
+    font-size: 0.70vw;
     text-align: justify;
 }
 
