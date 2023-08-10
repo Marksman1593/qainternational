@@ -541,6 +541,7 @@ h1::after{
 }
 
 .ques{
+    cursor: default;
     margin: 0.75% 2%;
 }
 
