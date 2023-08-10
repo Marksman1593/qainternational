@@ -3,12 +3,20 @@ top1.forEach(acc => {
     acc.addEventListener("click", function() {
         const ques = this.closest('.question');
         ques.classList.toggle("open");
+        const ans = ques.querySelector('.answer');
         if(ques.classList.contains("open")){
-            console.log(acc.querySelector('.arrow').innerHTML = '-');
-            acc.style.backgroundColor = "#006600";
+            acc.querySelector('.arrow').innerHTML = '-';
+            acc.style.backgroundColor = "#006600";  
+            ans.style.display = "block";
+            setTimeout(() => {
+                ans.style.opacity = "1";
+            }, 250);
+            // ans.style.opacity = "1";
         }else{
-            console.log(acc.querySelector('.arrow').innerHTML = '+');
+            acc.querySelector('.arrow').innerHTML = '+';
             acc.style.backgroundColor = "#0c61ab";
+            ans.style.display = "";
+            ans.style.opacity = "";
         }
     });
 });

@@ -269,7 +269,7 @@ body{
 }
   
 .mySlides img{
-    max-height: 90vh;
+    height: 90vh;
 }
   
 .mySlides {
@@ -309,11 +309,11 @@ body{
   .text {
     color: #ffffff;
     /* font-family: 'Poppins', sans-serif; */
-    font-size: 80px;
+    font-size: 6vw;
     font-weight: 1000;
-    padding: 8px 12px;
+    padding: 0px 12px;
     position: absolute;
-    top: 40%;
+    top: 37.5%;
     width: 100%;
     text-align: center;
   }
@@ -346,7 +346,52 @@ body{
 .left{
     width: 60vw;
     height: 205vh;
+    color: #fff;
+    padding: 0% 0%;
     background-color: #1d1d1f;
+}
+.con{
+    width: fit-content;
+    height: fit-content;
+    margin: 3% 3%;
+}
+
+.button{
+    display: block;
+    cursor: pointer;
+    min-width: 7.5vw;
+    width: fit-content;
+    height: 3.5vh;
+    background-color: #006600;
+    border-radius: 5px;
+    border: 2px solid #006600;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    padding: 0 1%;
+}
+
+.button-inner{
+    position: relative;
+    display: inline-block; 
+    margin: 0% auto; 
+    font-weight: bold;
+    line-height: 3.5vh; 
+    text-decoration: none; 
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.button:hover{
+    border: 2px solid #006600;
+    background-color: #fff;
+}
+
+.button:hover .button-inner{
+    color: #006600;
+}
+
+.story{
+    text-align: justify;
 }
 
 .right{
@@ -367,7 +412,8 @@ body{
 .floater-space{
     position: relative;
     width: 90%;
-    height: 100%;
+    min-height: 20vh;
+    height: fit-content; 
     transform: translateX(-100%);
     transition: all 1s ease-in-out;
     /* border: 1px solid #1d1d1f; */
@@ -380,9 +426,58 @@ body{
 .content{
     margin-left: 10%;
     width: 88%;
-    height: 80%;
+    height: 20vh;
     border-radius: 10px;
     background-color: #fff;
+    /* position: relative; */
+    padding-top: 1%;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 98%;
+    height: 20%;
+    margin: 0% auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #d7d7d7;
+}
+
+.upper img{
+    margin: 1% 2.5%;
+    height: 2.75vh;
+    width: auto;
+}
+
+.upper h4{
+    margin: 1% 2.5%;
+    font-size: 1vw;
+}
+
+.lower{
+    width: 98%;
+    min-height: 70%;
+    height: fit-content;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0% auto;
+    margin-top: 1%;
+    padding-top: 1%;
+    background-color: #0c61ab;
+}
+
+.lower h4{
+    color: #fff;
+    margin: 0% 2.5%;
+}
+
+.lower p{
+    margin: 0 2.5%;
+    margin-top: 1%;
+    color: #fff;
+    font-size: 0.75vw;
 }
 
 .content::after{
