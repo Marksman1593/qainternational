@@ -82,11 +82,11 @@ body{
 }
 
 .SM-icons a:hover .cls-1{
-    fill: #006600;
+    fill: #fff;
 }
 
 .SM-icons a:hover .cls-2{
-    fill: #ffffff;
+    fill: #006600;
 }
 
 .SM-icons svg{
@@ -260,6 +260,7 @@ body{
 .call a:hover{
     color: #006600;
 }
+
 .box{
     width: 100%;
     height: 100vh;
@@ -285,12 +286,13 @@ body{
 .prev, .next{
     cursor: pointer;
     position: absolute;
-    top: 37.5vh;
-    width: 2.5vw;
-    height: 2.5vw;
+    top: 36.5vh;
+    width: 3vw;
+    height: 3vw;
     color: white;
     font-weight: 1000;
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
+    padding: 0.125% 0;
     transition: 0.6s ease;
     border: 3px solid #fff;
     border-radius: 50%;
@@ -312,7 +314,7 @@ body{
   background-color: #1d1d1f;
 }
 
-.text {
+.text{
     color: #ffffff;
     /* font-family: 'Poppins', sans-serif; */
     font-size: 6vw;
@@ -456,18 +458,18 @@ body{
     display: flex;
     justify-content: space-between;
     width: 85%;
-    height: 50vh;
-    margin: 2.5vh auto;
+    height: 40vh;
+    margin: 3.5vh auto;
 }
 
 .service{
     width: 17.5%;
-    height: 10vh;
+    height: 8vh;
     transition: all 0.3s ease-in-out;
 }
 
 .service:hover{
-    transform: scale(1.02) translateY(-5%);
+    transform: scale(1.05) translateY(-20%);
 }
 
 .service .image{
@@ -489,7 +491,7 @@ body{
 
 .service:hover .image{
     background-color: #006600;
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
 .service .image1{
@@ -508,7 +510,7 @@ body{
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     transform: translateY(-17%);
     background-color: #d7d7d7;
     border-radius: 10px;
@@ -517,7 +519,7 @@ body{
 
 .ser1{
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     transition: all 0.3s ease-in-out;
     background-color: #d7d7d7;
 }
@@ -558,7 +560,6 @@ body{
     position: absolute;
     bottom: 0;
     margin-top: 4.25%;
-    /* padding-top: 1%; */
     width: 100%;
     height: 70%;
     transform: translateY(-37.5%);
@@ -647,7 +648,7 @@ body{
 }
 
 .company{
-    height: 15vh;    
+    height: 16vh;    
     background-color: rgba(215, 215, 215, 0.25);
     border-radius: 5px;
     padding-left: 1.5%;
@@ -658,7 +659,7 @@ body{
 }
 
 .company h6{
-    font-size: 100%;
+    font-size: 1vw;
     cursor: default;
     margin: 0.5vh auto;
     color: #1d1d1f;
@@ -668,7 +669,7 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 25%;
+    height: 22.5%;
     margin: 0.5% auto;
 }
 
@@ -771,12 +772,14 @@ body{
     width: 100%;
     height: 47.5%;
     padding-top: 2.5%;
+    border-top: 2px solid #1d1d1f;
     background-color: #d7d7d7;
 }
 
 .vsections{
     position: relative;
     display: flex;
+    justify-content: space-between;
     width: 75%;
     height: 90%;
     margin: 0 auto;
@@ -785,7 +788,11 @@ body{
 .vsection{
     display: flex;
     height: 100%;
-    width: 25%;
+    width: 24%;
+    padding: 2% 1%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 .vsection:first-child{
@@ -824,18 +831,19 @@ body{
 .footer-icons{
     display: flex;
     justify-content: space-between;
-    width: 65%;
-    height: 20%;
+    margin-top: 20%;
+    width: 100%;
+    height: 10%;
 }
 
 .footer-icons a{
     cursor: pointer;
-    width: 30%;
+    width: fit-content;
     height: 80%;
 }
 
 .footer-icons a svg{
-    height: 100%;
+    height: 7.5vh;
     width: auto;
 }
 
@@ -843,16 +851,15 @@ body{
     transition: 0.5s ease-in-out;
 }
 
-.cls-2{
+.cls-2{  
     transition: 0.5s ease-in-out;
 }
 
 .footer-icons a:hover .cls-1{
-    fill: #006600;
-}
+    fill: #fff;}
 
 .footer-icons a:hover .cls-2{
-    fill: #ffffff;
+    fill: #006600;
 }
 
 .bottom-tag{
@@ -892,7 +899,7 @@ body{
     scroll-snap-type: x mandatory;
     color: black;
     display: flex;
-    padding-top: 10%;
+    padding-top: 5%;
     /* align-items: center; */
     position: relative;
 }
@@ -925,7 +932,7 @@ body{
     /* width: 55vw; */
     /* padding: 2%; */
     margin: 0 0.75%;
-    transform: scale(1.05);
+    transform: scale(1.05) translateY(-2.5%);
 }
   
 .certificate{
@@ -949,7 +956,7 @@ body{
 
 .card p::-webkit-scrollbar {
     width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    background: transparent;
 }
 
 .card a{
@@ -978,9 +985,25 @@ body{
     background-color: #fff;
     color: #006600;
 }
+
+.certificates{
+    overflow: hidden;
+}
   
 .certificates h1{
+    position: relative;
     font-size: 2vw;
-    margin: 10% 0 0 0;
+    color: #1d1d1f;
+    margin: 1.25% 0 0 5.5%;
+}
+
+.certificates h1::after{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 3px; 
+    border-radius: 5px;
+    background-color: #1d1d1f;
 }
   

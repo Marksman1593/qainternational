@@ -52,8 +52,8 @@ body{
 
 .motto{
     display: inline-block;
-    position: absolute;
-    top: 25%;
+    position: relative;
+    top: 20%;
     padding-left: 1%;
     font-weight: 1000;
     font-size: 0.75vw;
@@ -82,12 +82,11 @@ body{
 }
 
 .SM-icons a:hover .cls-1{
-    fill: #006600;
-    stroke: none;
+    fill: #fff;
 }
 
 .SM-icons a:hover .cls-2{
-    fill: #ffffff;
+    fill: #006600;
 }
 
 .SM-icons svg{
@@ -262,61 +261,70 @@ body{
     color: #006600;
 }
 
+.box{
+    width: 100%;
+    height: 100vh;
+}
+
+* {box-sizing:border-box}
+
 .slideshow-container {
     max-width: 100%;
     max-height: 800px;
     position: relative;
     margin: auto;
-}
+  }
   
-.mySlides img{
-    max-height: 90vh;
-}
+  .mySlides img{
+      max-height: 90vh;
+  }
   
-.mySlides {
+  .mySlides {
     display: none;
-}
+  }
   
-.prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 38.75vh;
-    width: 2.5vw;
-    height: 2.5vw;
-    color: white;
-    font-weight: 1000;
-    font-size: 1.5vw; 
-    transition: 0.6s ease;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    user-select: none;
-}
-  
-.next {
-    right: 10%;
-    border-radius: 50%;
-}
-  
-.prev {
-    text-align: right;
-    left: 10%;
-    border-radius: 50%;
-}
+  .prev, .next{
+      cursor: pointer;
+      position: absolute;
+      top: 42.5vh;
+      width: 3vw;
+      height: 3vw;
+      color: white;
+      font-weight: 1000;
+      font-size: 1.5vw;
+      padding: 0% 0;
+      transition: 0.6s ease;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      user-select: none;
+  }
+    
+  .next {
+      right: 10%;
+      border-radius: 50%;
+  }
+    
+  .prev {
+      text-align: right;
+      left: 10%;
+      border-radius: 50%;
+  }
   
   .prev:hover, .next:hover {
     background-color: #1d1d1f;
   }
   
-  .text {
-    color: #ffffff;
-    /* font-family: 'Poppins', sans-serif; */
-    font-size: 80px;
-    font-weight: 1000;
-    padding: 8px 12px;
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    text-align: center;
+  .text{
+      color: #ffffff;
+      /* font-family: 'Poppins', sans-serif; */
+      font-size: 6vw;
+      font-weight: 1000;
+      padding: 0px 12px;
+      position: absolute;
+      top: 45%;
+      width: 100%;
+      background-color: rgba(29, 29, 31, 0.5);
+      text-align: center;
   }
   
   .numbertext {
@@ -554,12 +562,14 @@ h1::after{
     width: 100%;
     height: 47.5%;
     padding-top: 2.5%;
+    border-top: 2px solid #1d1d1f;
     background-color: #d7d7d7;
 }
 
 .vsections{
     position: relative;
     display: flex;
+    justify-content: space-between;
     width: 75%;
     height: 90%;
     margin: 0 auto;
@@ -568,7 +578,11 @@ h1::after{
 .vsection{
     display: flex;
     height: 100%;
-    width: 25%;
+    width: 24%;
+    padding: 2% 1%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 .vsection:first-child{
@@ -607,18 +621,19 @@ h1::after{
 .footer-icons{
     display: flex;
     justify-content: space-between;
-    width: 65%;
-    height: 20%;
+    margin-top: 20%;
+    width: 100%;
+    height: 10%;
 }
 
 .footer-icons a{
     cursor: pointer;
-    width: 30%;
+    width: fit-content;
     height: 80%;
 }
 
 .footer-icons a svg{
-    height: 100%;
+    height: 7.5vh;
     width: auto;
 }
 
@@ -626,16 +641,21 @@ h1::after{
     transition: 0.5s ease-in-out;
 }
 
-.cls-2{
+.cls-2{  
     transition: 0.5s ease-in-out;
 }
 
 .footer-icons a:hover .cls-1{
+    fill: #fff;}
+
+.footer-icons a:hover .cls-2{
     fill: #006600;
 }
 
-.footer-icons a:hover .cls-2{
-    fill: #ffffff;
+.bottom-tag{
+    width: 100%;
+    height: 2.5%;
+    background-color: #006600;
 }
 
 .bottom-tag{
