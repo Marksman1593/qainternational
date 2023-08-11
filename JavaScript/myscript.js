@@ -1,8 +1,13 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+document.addEventListener("DOMContentLoaded", function() {
+  setInterval(plusSlides, 5000);
+});
+
 // Next/previous controls
 function plusSlides(n) {
+  n=1;
   showSlides(slideIndex += n);
 }
 
