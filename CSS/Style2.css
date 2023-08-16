@@ -73,20 +73,20 @@ body{
     cursor: pointer;
 }
 
-.cls-1{
+.cls-4{
     transition: 0.5s ease-in-out;
 }
 
-.cls-2{
+.cls-5{
     transition: 0.5s ease-in-out;
 }
 
-.SM-icons a:hover .cls-1{
-    fill: #fff;
-}
-
-.SM-icons a:hover .cls-2{
+.SM-icons a:hover .cls-4{
     fill: #006600;
+}
+
+.SM-icons a:hover .cls-5{
+    fill: #fff;
 }
 
 .SM-icons svg{
@@ -591,14 +591,14 @@ body{
 
 .footer-icons{
     display: flex;
-    justify-content: space-between;
-    margin-top: 20%;
+    margin-top: 15%;
     width: 100%;
     height: 10%;
 }
 
 .footer-icons a{
     cursor: pointer;
+    margin-right: 10%;
     width: fit-content;
     height: 80%;
 }
