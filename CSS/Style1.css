@@ -353,10 +353,9 @@ body{
 .about{
     position: relative;
     display: flex;
-    justify-content: space-between;
     top: 5%;
-    left: 10%;
-    width: 80%;
+    left: 5%;
+    width: 90%;
     height: 90%;
 }
 
@@ -364,7 +363,8 @@ body{
     position: relative;
     top: 2.5%;
     left: 2.5%;
-    width: 80%;
+    width: 100%;
+    max-width: 50vw;
     height: 95%;
     margin-right: 5%;
     transform: translateX(-100%);
@@ -397,27 +397,28 @@ body{
 .text1{
     position: relative;
     width: 100%;
-    max-width: 1000px;
-    padding: 1% 4%;
+    /* max-width: 1200px; */
+    padding: 1% 2%;
     text-align: justify;
     height: 100%;
     top: 0;
     color: #1d1d1f;
-    transform: translateX(100%);
+    transform: translateX(90%);
     transition: all 1s ease-in-out;
 }
 
 .about .text1 h6{
     cursor: default;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
+    margin-top: 0;
     font-size: 1.75vw;
 }
 
 .about .text1 h6::after{
     content: "";
     position: absolute;
-    top: 14.5vh;
-    left: 7.5%;
+    top: 6.5%;
+    left: 3.5%;
     bottom: -1px; 
     width: 22.5%; 
     height: 3px; 
@@ -945,11 +946,12 @@ body{
     height: 100%;
     width: 25vw;
     scroll-snap-align: start;
-    padding: 1%;
+    padding: 1% 0;
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
     flex-direction: column;
 }
 
@@ -962,20 +964,31 @@ body{
     height: 20vh;
     width: 24vw;
     margin: 2% auto;
+    display: flex;
+    justify-content: center;
     border-radius: 10px;
-    background-color: #006600;
+    /* background-color: #006600; */
 }
 
-.card h3{
-    margin: 2% 2%;
+.card svg{
+    position: relative;
+    top: -50;
+    height: 150%;
+    width: auto;
+}
+
+.card h2{
+    margin: 1% 4%;
 }
 
 .card p{
-    height: 40%;
-    overflow: auto;
-    margin: 1% 2%;
-    font-size: 0.70vw;
+    height: 45%;
+    width: 92%;
     text-align: justify;
+    overflow: hidden;
+    white-space: wrap;
+    margin: 1% 4%;
+    font-size: 0.70vw;
 }
 
 .card p::-webkit-scrollbar {
@@ -989,7 +1002,8 @@ body{
 }
 
 .cer{
-    width: 100%;
+    width: 96%;
+    margin: 1% auto;
     height: 3.5vh;
     border-radius: 10px;
     bottom: 0;
