@@ -1,0 +1,29 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 773.9 612">
+<defs>
+<style>.sls-1,.sls-2,.sls-3,.sls-4{fill:none;stroke:#166734;stroke-miterlimit:10;}.sls-1,.sls-4{stroke-width:15px;}.sls-2{stroke-width:5px;}.sls-3{stroke-width:10px;}.sls-4{stroke-linecap:round;}</style>
+</defs>
+<path class="sls-1" d="M541.5,542.4v9.7a32.7,32.7,0,0,1-32.7,32.7h-318a32.6,32.6,0,0,1-32.6-32.7V99a32.6,32.6,0,0,1,32.6-32.6h91.9"/>
+<path class="sls-1" d="M415.3,66.4h93.5A32.7,32.7,0,0,1,541.5,99V300.4"/>
+<rect class="sls-2" x="196.3" y="352" width="21.8" height="42.23" transform="translate(580.3 165.9) rotate(90)"/>
+<rect class="sls-2" x="215.7" y="304.1" width="21.8" height="81" transform="translate(571.1 118) rotate(90)"/>
+<rect class="sls-2" x="215.7" y="275.5" width="21.8" height="81" transform="translate(542.6 89.5) rotate(90)"/>
+<rect class="sls-3" x="312.1" y="412.8" width="28.9" height="132.3"/>
+<rect class="sls-3" x="370.4" y="363.2" width="28.9" height="181.87"/>
+<rect class="sls-3" x="253.8" y="460.7" width="28.9" height="84.39"/>
+<rect class="sls-3" x="195.8" y="497.6" width="28.9" height="47.46"/>
+<rect class="sls-2" x="430" y="164.1" width="21.8" height="127.33" transform="translate(668.6 -213.1) rotate(90)"/>
+<rect class="sls-2" x="430" y="126.2" width="21.8" height="127.33" transform="translate(630.8 -251) rotate(90)"/>
+<rect class="sls-2" x="430" y="88.4" width="21.8" height="127.33" transform="translate(592.9 -288.8) rotate(90)"/>
+<rect class="sls-2" x="400.8" y="231.1" width="21.8" height="68.99" transform="translate(677.3 -146.1) rotate(90)"/>
+<rect class="sls-1" x="282.7" y="27.2" width="132.6" height="75.33" rx="9.1"/>
+<circle class="sls-1" cx="571.5" cy="420.9" r="124.2"/>
+<line class="sls-4" x1="512.2" y1="313.1" x2="571.5" y2="420.9"/>
+<line class="sls-4" x1="685.5" y1="386.9" x2="571.5" y2="420.9"/>
+<line class="sls-4" x1="683.1" y1="475.5" x2="571.5" y2="420.9"/>
+<circle class="sls-3" cx="265.4" cy="208.8" r="67.7"/>
+<circle class="sls-3" cx="265.4" cy="208.8" r="30.2"/>
+<line class="sls-3" x1="263" y1="145.2" x2="263" y2="182.8"/>
+<line class="sls-3" x1="316" y1="169.2" x2="286.5" y2="192.5"/>
+<line class="sls-3" x1="333" y1="209.9" x2="295.4" y2="209.9"/>
+<line class="sls-3" x1="208.6" y1="170.7" x2="240.2" y2="191"/>
+</svg>

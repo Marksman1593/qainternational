@@ -1,0 +1,20 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 773.9 612">
+    <defs>
+        <style>.sls-1{fill:none;stroke:#006a37;stroke-linecap:round;stroke-linejoin:round;stroke-width:14px;}</style>
+    </defs>
+    <path class="sls-1" d="M198.3,479.1v79.2a36.2,36.2,0,0,0,36.2,36.2H616.7A36.3,36.3,0,0,0,653,558.3V133.5l-1,3.2H555.4C544.6,133.5,535,124,535,112.2V17.5l118,116L535,17.5,234.4,18.6a36.3,36.3,0,0,0-36.1,36.3v74.8"/>
+    <path class="sls-1" d="M556.2,556.9h39.4a19.7,19.7,0,0,0,19.7-19.6V494.7"/>
+    <line class="sls-1" x1="255.3" y1="77.1" x2="477.4" y2="77.1"/>
+    <line class="sls-1" x1="395.8" y1="136.7" x2="476.9" y2="136.7"/>
+    <line class="sls-1" x1="445.2" y1="196.3" x2="594" y2="196.3"/>
+    <line class="sls-1" x1="476.5" y1="257.3" x2="597.3" y2="257.3"/>
+    <line class="sls-1" x1="476.5" y1="316.4" x2="597.3" y2="316.4"/>
+    <line class="sls-1" x1="464.9" y1="375.5" x2="595.2" y2="375.5"/>
+    <line class="sls-1" x1="506" y1="436.3" x2="597.3" y2="436.3"/>
+    <line class="sls-1" x1="186.3" y1="304.9" x2="337" y2="304.9"/>
+    <line class="sls-1" x1="227.3" y1="247" x2="296" y2="247"/>
+    <line class="sls-1" x1="227.3" y1="365.6" x2="296" y2="365.6"/>
+    <circle class="sls-1" cx="261.7" cy="304.9" r="141.6"/>
+    <circle class="sls-1" cx="261.7" cy="303.5" r="180.7"/>
+    <path class="sls-1" d="M414.4,400.1l101.1,98.6c26.6,26.6-27.3,84.5-55.2,56.6L359.2,456.7"/>
+</svg>

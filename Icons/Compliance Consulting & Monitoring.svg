@@ -1,0 +1,10 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 773.9 612">
+<defs>
+<style>.sls-1{fill:none;stroke-linecap:round;}.sls-1,.sls-2,.sls-3{stroke:#166734;stroke-miterlimit:10;stroke-width:15px;}.sls-2{fill:#1a6735;}.sls-3{fill:#186734;}</style>
+</defs>
+<path class="sls-1" d="M650.3,406V261.6c0-117.8-95.5-213.3-213.3-213.3H336.9c-117.8,0-213.3,95.5-213.3,213.3V406"/>
+<path class="sls-2" d="M168,251.4h24.8a30.9,30.9,0,0,1,30.9,30.9v119a30.9,30.9,0,0,1-30.9,30.9H168a14.7,14.7,0,0,1-14.7-14.7V266.1A14.7,14.7,0,0,1,168,251.4Z"/>
+<path class="sls-3" d="M564,247.4h24.8a30.9,30.9,0,0,1,30.9,30.9v119a30.9,30.9,0,0,1-30.9,30.9H564a14.7,14.7,0,0,1-14.7-14.7V262.1A14.7,14.7,0,0,1,564,247.4Z" transform="translate(1169.1 675.6) rotate(-180)"/>
+<path class="sls-1" d="M454.9,525.6h72a84.5,84.5,0,0,0,84.6-84.5V420.8"/
+><ellipse class="sls-2" cx="413.9" cy="525.6" rx="41.1" ry="24.9"/>
+</svg>
