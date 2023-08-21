@@ -377,7 +377,7 @@
                 </div>
             </div>
         </div>
-        <div class="box certificates" style="height: 80vh; background-color: #d7d7d7;">
+        <div class="box certificates" style="min-height: 80vh;height: fit-content; background-color: #d7d7d7;">
             <h1>Review our Certifications</h1>
             <div class="wrapper">
                 <div class="scroll">
@@ -3359,7 +3359,8 @@
                     </div>
                   </div>
               </div></div>
-        <div class="box contact" style="height: 900px;">
+        <div class="box contact" style="min-height: 800px; height: fit-content;
+        padding-bottom: 1.25%;">
             <div class="content">
                 <div class="left">
                     <h6>Find the solution that best suits you</h6>
@@ -3520,7 +3521,7 @@
                                 <div class="inner-text2">+86 571 8890 7043</div>
                             </div>
                         </div>
-                        <!-- <div class="sec">
+                        <div class="sec">
                             <div class="image">
                                 <?xml version="1.0" encoding="utf-8"?>
                                 <svg version="1.1" id="Layer_2_00000033327366171569578440000006865926702058229135_"
@@ -3563,7 +3564,7 @@
                                 
                                 <div class="inner-text2">CONTACT@QAINTERNATIONAL.COM</div>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="sec">
                             <div class="image">
                                 <?xml version="1.0" encoding="utf-8"?>
@@ -3753,11 +3754,10 @@
                                 </svg>
                                                         </div>
                             <div class="inner-text">
-                                <!-- <div class="inner-text1">Call Us -</div> -->
                                 <div class="inner-text2">562-270-4496</div>
                             </div>
                         </div>
-                        <!-- <div class="sec">
+                        <div class="sec">
                             <div class="image">
                                 <?xml version="1.0" encoding="utf-8"?>
                                 <svg version="1.1" id="Layer_2_00000033327366171569578440000006865926702058229135_"
@@ -3799,7 +3799,7 @@
                             <div class="inner-text">
                                 <div class="inner-text2">CONTACT@QAINTERNATIONAL.COM</div>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="sec">
                             <div class="image">
                                 <?xml version="1.0" encoding="utf-8"?>
@@ -3839,27 +3839,31 @@
                     <h6>All Fields Required:</h6>
                     <div class="inputs">
                         <h1>Full Name:</h1>
-                        <input type="text" placeholder="Name...">
+                        <input type="text" id="name" placeholder="Name..." onkeyup="checkForm()">
                     </div>
                     <div class="inputs">
                         <h1>Email:</h1>
-                        <input type="email" placeholder="abc@example.com">
+                        <input type="email" id="email" placeholder="abc@example.com" onkeyup="checkForm()">
                     </div>
                     <div class="inputs">
                         <h1>Company:</h1>
-                        <input type="text" placeholder="Compnay Name...">
+                        <input type="text" id="company" placeholder="Company Name..." onkeyup="checkForm()">
                     </div>
                     <div class="inputs">
                         <h1>Interested in...:</h1>
-                        <select name="cars" id="cars">
+                        <select name="cars" id="cars" onchange="checkForm()">
                             <option value="" disabled selected>Select a Service...</option>
                             <option value="volvo">Volvo</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
-                          </select>
+                        </select>
                     </div>
-                    <input type="submit" value="START A DISCUSSION">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="newsletter" class="newsletter disabled" id="submit" value="Subscribe to our Newsletter" disabled>
+                        <label for="newsletter">Subscribe to our Newsletter</label>
+                    </div>
+                    <input type="submit" class="submit disabled" id="submit" value="START A DISCUSSION" disabled>
                 </div>
             </div>
         </div>

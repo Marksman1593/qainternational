@@ -766,7 +766,8 @@ body{
 }
 
 .company{
-    height: 16vh;    
+    height: fit-content;
+    min-height: 16vh;    
     background-color: rgba(215, 215, 215, 0.25);
     border-radius: 5px;
     padding-left: 1.5%;
@@ -777,7 +778,7 @@ body{
 }
 
 .company h6{
-    font-size: 1vw;
+    font-size:1.25vw;
     cursor: default;
     margin: 0.5vh auto;
     color: #1d1d1f;
@@ -787,26 +788,27 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 22.5%;
-    margin: 0.5% auto;
+    min-height: .5vw;
+    height: fit-content;
 }
 
 .image{
-    width: 2.5%;
-    /* background-color: #000; */
-    height: 100%;
+    width: 3.5vh;
+    margin-top: 0.5%;
+    height: 3.5vh;
 }
 
 .image svg{
     height: 95%;
-    margin-top: 2.5%;
+    margin-top: 0%;
     width: auto;
 }
 
 .inner-text{
     display: flex;
+    font-size: 0.5vw;
     width: 92.5%;
-    margin-top: 0.75vh;
+    margin-top: 0.75%;
     height: 100%;
 }
 
@@ -831,6 +833,7 @@ body{
     width: 45%;
     height: 90%;
     top: 10%;
+    padding-top: 5%;
 }
 
 .right h6{
@@ -865,25 +868,57 @@ body{
     padding: 0 2%;
 }
 
-.right input[type="submit"]{
+.checkbox-container {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    margin: 2.5% 0 0 0;
+}
+
+.newsletter {
+    width: 20px;
+    height: 20px;
+    color: #006600;
+    margin-right: 10px; /* Add spacing between the checkbox and label */
+}
+
+.checkbox-container label{
+    font-size: 1vw;
+}
+
+.submit{
     cursor: pointer;
     width: 100%;
     height: 7.5%;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #006600;
+    border: 3px solid #006600;
     color: #fff;
     font-weight: bold;
     font-size: 1.5vw;
     padding: 0 2%;
-    margin-top: 7%;
+    margin: 0 auto;
+    margin-top: 2.5%;
     transition: all 0.25s ease-in-out;
 }
 
-.right input[type="submit"]:hover{
+.disabled{
+    cursor: default;
+    border: 3px solid #fff;
+    background-color: #d7d7d7;
+    color: #fff;
+}
+
+.submit:hover{
     border: 3px solid #006600;
     background-color: #fff;
     color: #006600;
+}
+
+.disabled:hover{
+    border: 3px solid #fff;
+    background-color: #d7d7d7;
+    color: #fff;
 }
 
 .footer{
