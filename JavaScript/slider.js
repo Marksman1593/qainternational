@@ -1,34 +1,6 @@
-// const slider = document.querySelector(".horizontal-slider");
-// let isDown = false;
-// let startX;
-// let scrollLeft;
 
-// slider.addEventListener("mousedown", (e) => {
-//   isDown = true;
-//   slider.classList.add("active");
-//   startX = e.pageX - slider.offsetLeft;
-//   scrollLeft = slider.scrollLeft;
-// });
-// slider.addEventListener("mouseleave", () => {
-//   isDown = false;
-//   slider.classList.remove("active");
-// });
-// slider.addEventListener("mouseup", () => {
-//   isDown = false;
-//   slider.classList.remove("active");
-// });
-// slider.addEventListener("mousemove", (e) => {
-//   if (!isDown) return;
-//   e.preventDefault();
-//   const x = e.pageX - slider.offsetLeft;
-//   const walk = (x - startX) * 1; //scroll-fast
-//   slider.scrollLeft = scrollLeft - walk;
-//   console.log(walk);
-// });
 
 const slider = document.querySelector(".horizontal-slider");
-const content = slider.querySelector(".slider-content");
-const sliderWidth = slider.offsetWidth;
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -73,37 +45,49 @@ function checkForm(){
   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   var submitButton = document.getElementById("submit");
   var checkboxButton = document.getElementById("newsletter");
+  var AFR = document.getElementById("AFR");
 
   if (name1 !== "" && email !== "" && company !== "" && service !== "" && emailPattern.test(email)) {
     // submitButton.disabled = false;
     submitButton.classList.remove("disabled");
     submitButton.removeAttribute("disabled");
     checkboxButton.removeAttribute("disabled");
+    AFR.style.color = "#006600";
 
   } else {
   // submitButton.disabled = true;
   submitButton.classList.add("disabled");
   submitButton.setAttribute("disabled", "disabled");
   checkboxButton.setAttribute("disabled", "disabled");
+  AFR.style.color = "#d7d7d7";
   }
 }
 
-// function validateEmail() {
-//   // Get the email input field
-//   const emailInput = document.getElementById("emailInput");
+function sendEmail(){
+  var msg = "No Comment."
+  var news = "Not subscribed to newsletter."
+  var comment = document.getElementById("comments").value;
+  if(comment !== ""){
+      msg = comment;
+  }
 
-//   // Get the validation message element
-//   const validationMessage = document.getElementById("validationMessage");
+  var cb = document.getElementById("newsletter");
+  if(cb.checked){
+      news = "Subscribed to newsletter."
+  }
 
-//   // Regular expression to match a valid email format
-//   const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-
-//   // Check if the entered email matches the valid format
-//   if (emailPattern.test(emailInput.value)) {
-//       validationMessage.textContent = "Email is valid!";
-//       validationMessage.style.color = "green";
-//   } else {
-//       validationMessage.textContent = "Invalid email format. Please enter a valid email.";
-//       validationMessage.style.color = "red";
-//   }
-// }
+  console.log(msg + "\n" + news)
+  
+  Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "bilalazfar1593@gmail.com",
+      Password : "C8AA68DD73AF589B5DDCB6CCB3E0A4470D83",
+      To : 'bscs2012242@szabist.pk',
+      From : "bilalazfar1593@gmail.com",
+      Subject : document.getElementById("company").value + ", " + document.getElementById("name").value + ", Contact us Enquiry",
+      Body : msg + "\n\n" + document.getElementById("email").value + "\n\n" + news
+  }).then(
+    alert("Email sent")
+ // message => alert(message)
+  );
+}

@@ -19,29 +19,22 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
+
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
+
   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
 }
 
-// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
-// Get the header
 var header = document.getElementById("myHeader");
 
-// Get the offset position of the navbar
 var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.scrollY > sticky) {
     header.classList.add("sticky");
@@ -60,7 +53,6 @@ function handleIntersection(entries, observer) {
   
 }
 
-// Create an Intersection Observer instance for .pics
 const observer = new IntersectionObserver(handleIntersection, { threshold: 0.05 });
 const observer1 = new IntersectionObserver(handleIntersection, { threshold: 0.05});
 
@@ -77,7 +69,6 @@ function handleIntersection1(entries, observer) {
           
           entry.target.classList.add('initiate');
           
-          // Add the class for 1 second, then remove it
           setTimeout(() => {
               entry.target.classList.remove('initiate');
           }, 1000);
@@ -87,10 +78,8 @@ function handleIntersection1(entries, observer) {
   });
 }
 
-// Create an Intersection Observer instance for .pics
 const observer2 = new IntersectionObserver(handleIntersection1, { threshold: 0.5 });
 
-// Observe the .pics element
 const serviceElements = document.querySelectorAll('.service');
 serviceElements.forEach(element => {
     observer2.observe(element);

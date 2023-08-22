@@ -264,6 +264,7 @@ body{
 .box{
     width: 100%;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 * {box-sizing:border-box}
@@ -471,7 +472,11 @@ body{
 }
 
 .service:hover{
-    transform: scale(1.05) translateY(-27.5%);
+    transform: scale(1.025) translateY(-12.5%);
+}
+
+.service:hover .ser{
+    box-shadow: 0px 5px 5px 1.5px rgba(29, 29, 31, 0.25);
 }
 
 .service .image0{
@@ -583,6 +588,7 @@ body{
     white-space: wrap;
     text-align: justify;
     text-decoration: none;
+    line-height: 20px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -590,6 +596,7 @@ body{
     text-align: left;
     font-size: 1.25vw;
     font-weight: bold;
+    line-height: 30px;
     margin: 2.5% 0;
 }
 
@@ -656,6 +663,10 @@ body{
 
 .service:hover .ser2{
     transform: translateY(0%);
+}
+
+.initiate{
+    transform: scale(1.02) translateY(-5%);
 }
 
 .reviews{
@@ -844,7 +855,7 @@ body{
 }
 
 .inputs h1{
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     margin: 2.5% 0 1% 2%;
 }
 
@@ -854,8 +865,8 @@ body{
     border: none;
     border-radius: 5px;
     background-color: #d7d7d7;
-    font-size: 1.5vw;
-    padding: 0 2%;
+    font-size: 1.25vw;
+    padding: 1% 2%;
 }
 
 .inputs select{
@@ -864,7 +875,7 @@ body{
     border: none;
     border-radius: 5px;
     background-color: #d7d7d7;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     padding: 0 2%;
 }
 
@@ -1035,186 +1046,143 @@ body{
     transform: translateX(0%);
 }
 
-.initiate{
-    transform: scale(1.02) translateY(-5%);
-}
-
-.wrapper{
-    min-height: 20%;
-    overflow-x: hidden;
-    height: 90%;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
-.horizontal-slider{
-    width: 100.5%;
-    height: 100%;
-    margin: 0 auto;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    color: black;
-    display: flex;
-    padding-top: 5%;
+.main-slider{
     position: relative;
+    display: flex;
+    width:400%;
+    height: 60vh;
+    margin-top: 2.5%;
+    /* overflow-x: hidden; */
+    background-color: #d7d7d7;
 }
 
-.active {
-    scroll-snap-type: none;
+.slider{
+    display: flex;
+    /* Width is number of slides * 5% */
+    width: 25%;
+    height: 80%;
+    margin-bottom: 1.25%;
+    background-color: #d7d7d7;
+    animation-play-state: running;
+    animation: slide 10s infinite linear;
+    animation-delay: 2.5s;
 }
 
-.horizontal-slider::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; 
+/* .one{
+    animation: slide 15s infinite linear;
+    animation-delay: 2.5s;
 }
 
-.card {
+.two{
+    animation: slide 15s infinite linear;
+    animation-delay: 2.5s;
+} */
+
+.slide{
+    width: 20%;
+    min-height: 90%;
+    height: fit-content;
+    margin: 0 0.5%;
     background-color: #fff;
-    margin: 0 0.25%;
-    height: 100%;
-    width: 25vw;
-    scroll-snap-align: start;
-    padding: 1% 0;
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    flex-direction: column;
 }
 
-.card:hover{
-    margin: 0 0.75%;
+.slide:hover{
+    z-index: 1;
+    box-shadow: 0 10px 10px 5px rgba(29, 29, 31, 0.25);
     transform: scale(1.05) translateY(-2.5%);
 }
-  
+
 .certificate{
-    height: 20vh;
-    width: 24vw;
-    margin: 2% auto;
+    margin: 0% 5%;
     display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    /* background-color: #006600; */
+    flex-direction: column;
+    align-items: center;
 }
 
-.card svg{
-    position: relative;
-    top: -40;
-    height: 150%;
+.certificate img{
     width: auto;
-}
-
-.card h2{
-    margin: 1% 4%;
-}
-
-.card p{
-    height: 45%;
-    width: 92%;
-    text-align: justify;
-    overflow: hidden;
-    white-space: wrap;
-    margin: 1% 4%;
-    font-size: 0.70vw;
-}
-
-.card p::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-
-.card a{
-    text-decoration: none;
-    font-size: 1vw;
+    height: 20vh;
+    margin: 2.5% 0;
+    /* border: 3px solid black; */
 }
 
 .cer{
-    width: 96%;
-    margin: 1% auto;
-    height: 3.5vh;
-    border-radius: 10px;
-    bottom: 0;
-    background-color: #006600;
-    border: 3px solid #006600;
+    width: 120%;
+    height: 100%;
+    border-radius: 5px;
     color: #fff;
-    font-weight: bolder;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
+    padding: 2.5% 10%;
+    margin-bottom: 10%;
+    border: 3px solid #006600;
+    background-color: #006600;
     transition: all 0.5s ease-in-out;
 }
 
 .cer:hover{
-    background-color: #fff;
     color: #006600;
+    background-color: #fff;
 }
 
-.certificates{
-    overflow: hidden;
-}
-  
-.certificates h1{
-    position: relative;
-    font-size: 2vw;
-    color: #1d1d1f;
-    margin: 1.25% 0 0 5.5%;
+.cert-text{
+    width: 105%;
+    height: 35vh;
+    /* border: 3px solid black; */
 }
 
-.certificates h1::after{
-    display: block;
-    content: "";
-    position: absolute;
-    width: 25%;
-    height: 3px; 
-    border-radius: 5px;
-    background-color: #1d1d1f;
-}
-
-
-.scroll {
-    position: relative;
-    width: 100%;
-    overflow-x: hidden;
-    z-index: 1;
-    margin: 2% 0;
-    padding: 0;
-  }
-  
-  .m-scroll {
-    overflow-x: hidden;
-    height: 80%;
-    padding-top: 2%;
-    white-space: nowrap;
-    animation: scrollText 10s infinite linear;
+.cert-text h2{
     margin: 0;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: fit-content;
-    animation-play-state: running; 
-  }
-  
-  .m-scroll span {
-    display: inline-block;
-    width: 25vw;
-    margin: 0 1%;
-    padding: 0;
-    color: black;
-  }
-  
-  @keyframes scrollText {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
+}
 
-  .m-scroll:hover{
-    animation-play-state: paused;  
+.cert-text p{
+    line-height: 20px;
+    margin: 0;
+    text-align: justify;
+}
+
+.certificate svg{
+    width: 12.5vw;
+    height: 12.5vw;
+    margin: 0 auto;
+    padding: 0;
+    transform: translateY(-10%);
+}
+
+.certificate a{
+    position: relative;
+    color: #006600;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1vw;
+    bottom: 0;
+    /* transform: translateY(-200%); */
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+@keyframes slide1{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.main-slider:hover .one{
+    animation-play-state: paused;
+}
+
+.main-slider:hover .two{
+    animation-play-state: paused;
 }
   
