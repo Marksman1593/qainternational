@@ -1059,8 +1059,8 @@ body{
 .slider{
     display: flex;
     /* Width is number of slides * 5% */
-    width: 25%;
-    height: 80%;
+    width: 45%;
+    height: 25%;
     margin-bottom: 1.25%;
     background-color: #d7d7d7;
     animation-play-state: running;
