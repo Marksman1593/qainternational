@@ -380,7 +380,7 @@
         <div class="box certificates" style="min-height: 80vh;height: fit-content; background-color: #d7d7d7;">
             <h1>Review our Certifications</h1>
             <div class="main-slider">
-                <div class="slider one">
+                <div id="slider-one" class="slider one">
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/Certificates-02.png">
@@ -388,7 +388,11 @@
                                 <h2>Occupational Health and Safety</h2>
                                 <p><b>Standard Year: </b>2018<br>
                                     <b>ISO:</b> 45001<br>
-                                    <b>Certificate No.:</b> 114ISO45P<br><br>
+                                    <b>Certificate No.:</b> 114ISO45P<br>
+                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
                                     <b>ISO 45001:2018</b> specifies requirements for an occupational health
                                     and safety (OH  &S) management system, and gives guidance for its
                                     use, to enable organizations to provide safe and healthy workplaces
@@ -397,7 +401,7 @@
                                 </p>
                             </div>
                             <a href="#">
-                                <div class="cer">View Details</div>
+                                <div class="cer" onclick="moreDetail('one',1)">View Details</div>
                             </a>
                         </div>
                     </div>
@@ -409,6 +413,11 @@
                                 <p><b>Standard Year: </b>2015<br>
                                     <b>ISO:</b> 9001<br>
                                     <b>Certificate No.:</b> Pak500673<br><br>
+
+                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
                                     <b>ISO 9001:2015</b> is an international standard that outlines the
                                     requirements for a quality management system (QMS). A QMS is a
                                     systematic approach that organizations use to manage and improve
@@ -418,7 +427,7 @@
                                 </p>
                             </div>
                             <a href="#">
-                                <div class="cer">View Details</div>
+                                <div class="cer" onclick="moreDetail('one',2)">View Details</div>
                             </a>
                         </div>
                     </div>
@@ -534,7 +543,7 @@
                     </div>
                     <!-- <div class="slide">10</div> -->
                 </div>
-                <div class="slider two">
+                <div id="slider-two" class="slider two">
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/Certificates-02.png">

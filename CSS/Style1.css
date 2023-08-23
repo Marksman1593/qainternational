@@ -1064,7 +1064,7 @@ body{
     margin-bottom: 1.25%;
     background-color: #d7d7d7;
     animation-play-state: running;
-    animation: slide 10s infinite linear;
+    animation: slide 15s infinite linear;
     animation-delay: 2.5s;
 }
 
@@ -1114,7 +1114,7 @@ body{
     border-radius: 5px;
     color: #fff;
     padding: 2.5% 10%;
-    margin-bottom: 10%;
+    margin: 10% 0;
     border: 3px solid #006600;
     background-color: #006600;
     transition: all 0.5s ease-in-out;
@@ -1127,15 +1127,29 @@ body{
 
 .cert-text{
     width: 105%;
-    height: 35vh;
+    height: 10vh;
+    /* border: 3px solid black; */
+    /* margin-bottom: 5%; */
+}
+.cert-text2{
+    display: none;
+    width: 105%;
+    height: 17.5vh;
+    margin-bottom: 5%;
     /* border: 3px solid black; */
 }
 
 .cert-text h2{
+    font-size: 1.125vw;
     margin: 0;
 }
 
 .cert-text p{
+    line-height: 20px;
+    margin: 0;
+    text-align: justify;
+}
+.cert-text2 p{
     line-height: 20px;
     margin: 0;
     text-align: justify;

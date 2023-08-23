@@ -136,7 +136,6 @@ window.onload = function() {
       new TxtRotate(elements[i], JSON.parse(toRotate), period);
     }
   }
-  // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
@@ -167,24 +166,30 @@ function showSlide(n) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Get the elements
   const inactiveElements = document.querySelectorAll('.inactive');
   const activeElement = document.getElementById('active');
   
   
-  // Add mouseover event to each inactive element
   inactiveElements.forEach(function(inactive) {
     inactive.addEventListener('mouseover', function() {
-      // Change the style of the active element
       activeElement.style.color = '#1d1d1f';
       
     });
     
-    // Add mouseout event to each inactive element (optional)
     inactive.addEventListener('mouseout', function() {
-      // Restore the original style of the active element
       activeElement.style.color = '#006600';
     });
   });
 });
+
+function moreDetail(slider1,num){
+  console.log(slider1 + ", " + num);
+  var slider2 = document.getElementById("slider-one");
+  console.log(slider2);
+  var slide = slider2.getElementsByClassName("slide")[num-1];
+  console.log(slide);
+  var cert_text2 = slide.getElementsByClassName("cert-text2")[0];
+  console.log(cert_text2);
+  cert_text2.style.display = "block";
+}
 
