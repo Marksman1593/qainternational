@@ -100,32 +100,32 @@
                 </div>
             </div>
         </div>
-        <div class="box slider" style="height: 90vh;">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="text">QA INTERNATIONAL</div>
-                  <div class="numbertext">1 / 3</div>
-                  <img src="Pictures/Slider1.avif" style="width:100%">
-                </div>
+        <div class="box slideshow-box" style="height: 90vh;">
               
-                <div class="mySlides fade">
-                  <div class="numbertext">2 / 3</div>
-                  <img src="img2.jpg" style="width:100%">
-                  <div class="text">Caption Two</div>
+              <div class="slideshow-container">
+                <div class="slideshow">
+                    <img src="Pictures/Slider-01.jpg">
+                    <div class="slide-bar">
+                        <div class="l butt">&#8701</div>
+                        <h1>QA INTERNATIONAL 1</h1>
+                        <div class="r butt">&#8702</div>
+                    </div>
+                    
                 </div>
-              
-                <div class="mySlides fade">
-                  <div class="numbertext">3 / 3</div>
-                  <img src="img3.jpg" style="width:100%">
-                  <div class="text">Caption Three</div>
+                <div class="slideshow-dummy">                    
                 </div>
-              
-                <a class="prev" onclick="plusSlides(-1)">&#8592;</a>
-                <a class="next" onclick="plusSlides(1)">&#8594;</a>
+                <div class="slideshow">
+                    <img src="Pictures/Slider-01.jpg">
+                    <div class="slide-bar">
+                        <div class="l butt">&#8701</div>
+                        <h1>QA INTERNATIONAL 1</h1>
+                        <div class="r butt">&#8702</div>
+                    </div>
+                    
+                </div>
               </div>
-              <br>
               
-              
+
         </div>
         <div class="box aboutus" style="background-color: #d7d7d7; overflow-x: hidden;">
             <div class="about">
@@ -385,10 +385,11 @@
                         <div class="certificate">
                             <img src="Certficates/Certificates-02.png">
                             <div class="cert-text">
-                                <h2>Occupational Health and Safety</h2>
+                                <h2>Occupational Health and Safety<br><br></h2>
                                 <p><b>Standard Year: </b>2018<br>
                                     <b>ISO:</b> 45001<br>
-                                    <b>Certificate No.:</b> 114ISO45P<br>
+                                    <b>Certificate No.:</b> 114ISO45P
+                                    <div class="cer" onclick="moreDetail('one',1)">View Details</div>
                                 </p>
                             </div>
                             <div class="cert-text2">
@@ -400,19 +401,18 @@
                                     proactively improving its OH&S performance.
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer" onclick="moreDetail('one',1)">View Details</div>
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/Certificates-01.png">
                             <div class="cert-text">
-                                <h2>Quality Management Systems</h2>
+                                <h2>Quality Management Systems<br><br></h2>
                                 <p><b>Standard Year: </b>2015<br>
                                     <b>ISO:</b> 9001<br>
-                                    <b>Certificate No.:</b> Pak500673<br><br>
+                                    <b>Certificate No.:</b> Pak500673
+                                    <div class="cer" onclick="moreDetail('one',2)">View Details</div>
 
                                 </p>
                             </div>
@@ -426,18 +426,24 @@
                                     consistency, efficiency, and customer satisfaction.
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer" onclick="moreDetail('one',2)">View Details</div>
-                            </a>
+                            
+                            
+                            
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
+                            
                             <img src="Certficates/Cer.jpg">
                             <div class="cert-text">
-                                <h2>PSQCA</h2>
+                                <h2>PSQCA<br><br></h2>
                                 <p><b>Registration Year: </b>2019<br>
-                                    <b>Certificate No.:</b> SDC-RIA(25)/2019<br><br>
+                                    <b>Certificate No.:</b> SDC-RIA(25)/2019<br><br>    
+                                    <div class="cer" onclick="moreDetail('one',3)">View Details</div>
+                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
                                     <b>PSQCA: </b>The main function of the Authority is to foster and promote
                                     standards and conformity assessment as a means of advancing the
                                     national economy, promoting industrial efficiency and development,
@@ -447,9 +453,7 @@
                                     assessment in the interest of consumers
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="slide">
@@ -459,6 +463,11 @@
                                 <h2 style="white-space: wrap;">Karachi Chamber Of Commerce Industry</h2>
                                 <p><b>Registration Year: </b>2018<br>
                                     <b>Certificate No.:</b> S.166252<br><br>
+                                    <div class="cer" onclick="moreDetail('one',4)">View Details</div>
+                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
                                     <b>ISO 45001:2018</b> specifies requirements for an occupational health
                                     and safety (OH&S) management system, and gives guidance for its
                                     use, to enable organizations to provide safe and healthy workplaces
@@ -466,23 +475,27 @@
                                     proactively improving its OH&S performance.
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/Certificates-06.png">
                             <div class="cert-text">
-                                <h2>National Taxation Number</h2>
-                                <p><b>Registration No.:</b> 0709730-1<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <h2>National Taxation Number<br><br></h2>
+                                <p><b>Registration No.:</b> 0709730-1<br><br><br>
+                                    <div class="cer" onclick="moreDetail('one',5)">View Details</div>
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
+                                </p>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="slide">
@@ -490,13 +503,18 @@
                             <img src="Certficates/China Certificates-01.png">
                             <div class="cert-text">
                                 <h2>China Inspection Body and Laboratory</h2>
-                                <p><b>lab member ID: </b>ST-1908<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <p><b>lab member ID: </b>ST-1908<br><br><br>
+                                <div class="cer" onclick="moreDetail('one',6)">View Details</div>
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="slide">
@@ -504,27 +522,37 @@
                             <img src="Certficates/China Certificates-02.png">
                             <div class="cert-text">
                                 <h2>China National Accreditation Service</h2>
-                                <p><b>registration No.: </b>L3129<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <p><b>registration No.: </b>L3129<br><br><br>
+                                    <div class="cer" onclick="moreDetail('one',7)">View Details</div>
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/China Certificates-03.png">
                             <div class="cert-text">
-                                <h2>ISTA</h2>
-                                <p><b>lab member ID: </b>ST-1908<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <h2>ISTA<br><br></h2>
+                                <p><b>lab member ID: </b>ST-1908<br><br><br>
+                                    <div class="cer" onclick="moreDetail('one',8)">View Details</div>
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="slide">
@@ -532,13 +560,17 @@
                             <img src="Certficates/China Certificates-04.png">
                             <div class="cert-text">
                                 <h2>U.S. Consumer Product Safety Commission</h2>
-                                <p><b>CPSC ID No.: </b>1041<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <p><b>CPSC ID No.: </b>1041<br><br><br>
+                                    <div class="cer" onclick="moreDetail('one',9)">View Details</div>                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
                         </div>
                     </div>
                     <!-- <div class="slide">10</div> -->
@@ -548,10 +580,15 @@
                         <div class="certificate">
                             <img src="Certficates/Certificates-02.png">
                             <div class="cert-text">
-                                <h2>Occupational Health and Safety</h2>
+                                <h2>Occupational Health and Safety<br><br></h2>
                                 <p><b>Standard Year: </b>2018<br>
                                     <b>ISO:</b> 45001<br>
-                                    <b>Certificate No.:</b> 114ISO45P<br><br>
+                                    <b>Certificate No.:</b> 114ISO45P
+                                    <div class="cer" onclick="moreDetail('two',1)">View Details</div>
+                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
                                     <b>ISO 45001:2018</b> specifies requirements for an occupational health
                                     and safety (OH  &S) management system, and gives guidance for its
                                     use, to enable organizations to provide safe and healthy workplaces
@@ -559,19 +596,23 @@
                                     proactively improving its OH&S performance.
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/Certificates-01.png">
                             <div class="cert-text">
-                                <h2>Quality Management Systems</h2>
+                                <h2>Quality Management Systems<br><br></h2>
                                 <p><b>Standard Year: </b>2015<br>
                                     <b>ISO:</b> 9001<br>
-                                    <b>Certificate No.:</b> Pak500673<br><br>
+                                    <b>Certificate No.:</b> Pak500673
+                                    <div class="cer" onclick="moreDetail('two',2)">View Details</div>
+
+                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
                                     <b>ISO 9001:2015</b> is an international standard that outlines the
                                     requirements for a quality management system (QMS). A QMS is a
                                     systematic approach that organizations use to manage and improve
@@ -580,18 +621,24 @@
                                     consistency, efficiency, and customer satisfaction.
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            
+                            
+                            
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
+                            
                             <img src="Certficates/Cer.jpg">
                             <div class="cert-text">
-                                <h2>PSQCA</h2>
+                                <h2>PSQCA<br><br></h2>
                                 <p><b>Registration Year: </b>2019<br>
-                                    <b>Certificate No.:</b> SDC-RIA(25)/2019<br><br>
+                                    <b>Certificate No.:</b> SDC-RIA(25)/2019<br><br>    
+                                    <div class="cer" onclick="moreDetail('two',3)">View Details</div>
+                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
                                     <b>PSQCA: </b>The main function of the Authority is to foster and promote
                                     standards and conformity assessment as a means of advancing the
                                     national economy, promoting industrial efficiency and development,
@@ -601,9 +648,7 @@
                                     assessment in the interest of consumers
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="slide">
@@ -613,6 +658,11 @@
                                 <h2 style="white-space: wrap;">Karachi Chamber Of Commerce Industry</h2>
                                 <p><b>Registration Year: </b>2018<br>
                                     <b>Certificate No.:</b> S.166252<br><br>
+                                    <div class="cer" onclick="moreDetail('two',4)">View Details</div>
+                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
                                     <b>ISO 45001:2018</b> specifies requirements for an occupational health
                                     and safety (OH&S) management system, and gives guidance for its
                                     use, to enable organizations to provide safe and healthy workplaces
@@ -620,79 +670,102 @@
                                     proactively improving its OH&S performance.
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/Certificates-06.png">
                             <div class="cert-text">
-                                <h2>National Taxation Number</h2>
-                                <p><b>Registration No.:</b> 0709730-1<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <h2>National Taxation Number<br><br></h2>
+                                <p><b>Registration No.:</b> 0709730-1<br><br><br>
+                                    <div class="cer" onclick="moreDetail('two',5)">View Details</div>
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
+                                </p>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/China Certificates-01.png">
                             <div class="cert-text">
-                                <h2>National Taxation Number</h2>
-                                <p><b>Registration No.:</b> 0709730-1<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <h2>China Inspection Body and Laboratory</h2>
+                                <p><b>lab member ID: </b>ST-1908<br><br><br>
+                                <div class="cer" onclick="moreDetail('two',6)">View Details</div>
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/China Certificates-02.png">
                             <div class="cert-text">
-                                <h2>National Taxation Number</h2>
-                                <p><b>Registration No.:</b> 0709730-1<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <h2>China National Accreditation Service</h2>
+                                <p><b>registration No.: </b>L3129<br><br><br>
+                                    <div class="cer" onclick="moreDetail('two',7)">View Details</div>
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/China Certificates-03.png">
                             <div class="cert-text">
-                                <h2>National Taxation Number</h2>
-                                <p><b>Registration No.:</b> 0709730-1<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <h2>ISTA<br><br></h2>
+                                <p><b>lab member ID: </b>ST-1908<br><br><br>
+                                    <div class="cer" onclick="moreDetail('two',8)">View Details</div>
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="certificate">
                             <img src="Certficates/China Certificates-04.png">
                             <div class="cert-text">
-                                <h2>National Taxation Number</h2>
-                                <p><b>Registration No.:</b> 0709730-1<br><br>
-                                    <b>NTN:</b> is a unique identification number assigned to individuals and businesses by the tax authorities in many countries, including Pakistan. The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+                                <h2>U.S. Consumer Product Safety Commission</h2>
+                                <p><b>CPSC ID No.: </b>1041<br><br><br>
+                                    <div class="cer" onclick="moreDetail('two',9)">View Details</div>                                </p>
+                            </div>
+                            <div class="cert-text2">
+                                <p>
+                                    <b>NTN:</b> is a unique identification number assigned to individuals
+                                     and businesses by the tax authorities in many countries, including Pakistan.
+                                      The purpose of an NTN is to track and record taxpayers for income tax and other tax-related purposes.
+
                                 </p>
                             </div>
-                            <a href="#">
-                                <div class="cer">View Details</div>
-                            </a>
                         </div>
                     </div>
                     <!-- <div class="slide">10</div> -->

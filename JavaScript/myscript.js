@@ -1,33 +1,4 @@
-let slideIndex = 1;
-showSlides(slideIndex);
 
-document.addEventListener("DOMContentLoaded", function() {
-  setInterval(plusSlides, 5000);
-});
-
-// Next/previous controls
-function plusSlides(n) {
-  n=1;
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slides[slideIndex-1].style.display = "block";
-}
 
 window.onscroll = function() {myFunction()};
 
@@ -183,13 +154,49 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function moreDetail(slider1,num){
-  console.log(slider1 + ", " + num);
   var slider2 = document.getElementById("slider-one");
-  console.log(slider2);
   var slide = slider2.getElementsByClassName("slide")[num-1];
-  console.log(slide);
   var cert_text2 = slide.getElementsByClassName("cert-text2")[0];
-  console.log(cert_text2);
-  cert_text2.style.display = "block";
+  var cer = slide.getElementsByClassName("cer")[0];
+  
+  // cer.innerHTML = "Less Detail";
+  if(cert_text2.style.display == "block"){
+    slide.style.minHeight = "";
+    cert_text2.style.display = "";
+    cert_text2.style.color = ""
+    cer.innerHTML = "View Detail";
+  }else{
+    slide.style.minHeight = "65vh";
+    setTimeout(() => {
+      cert_text2.style.display = "block";
+  }, 250);
+    setTimeout(() => {
+      cert_text2.style.color = "rgba(29, 29, 31, 1)"
+  }, 1000);
+    
+    cer.innerHTML = "Less Detail";
+  }
+  var slider3 = document.getElementById("slider-two");
+  var slide1 = slider3.getElementsByClassName("slide")[num-1];
+  var cert_text21 = slide1.getElementsByClassName("cert-text2")[0];
+  var cer1 = slide1.getElementsByClassName("cer")[0];
+  
+  // cer.innerHTML = "Less Detail";
+  if(cert_text21.style.display == "block"){
+    slide1.style.minHeight = "";
+    cert_text21.style.display = "";
+    cert_text21.style.color = ""
+    cer1.innerHTML = "View Detail";
+  }else{
+    slide1.style.minHeight = "65vh";
+    setTimeout(() => {
+      cert_text21.style.display = "block";
+  }, 250);
+    setTimeout(() => {
+      cert_text21.style.color = "rgba(29, 29, 31, 1)"
+  }, 1000);
+    
+    cer1.innerHTML = "Less Detail";
+  }
 }
 

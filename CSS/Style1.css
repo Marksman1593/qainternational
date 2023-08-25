@@ -269,81 +269,85 @@ body{
 
 * {box-sizing:border-box}
 
-.slideshow-container {
-  max-width: 100%;
-  max-height: 800px;
-  position: relative;
-  margin: auto;
+.slideshow-box{
+    position: relative;
+    width: 100%;
+    background-color: #1d1d1f;
 }
 
-.mySlides img{
-    max-height: 90vh;
+.slideshow-container{
+    display: flex;
+    height: 100%;
+    width: 300%;
+}
+.slideshow{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+.slideshow-dummy{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
 }
 
-.mySlides {
-  display: none;
+.animate{
+    animation: slideshow 5s ease-in-out infinite;
+    animation-delay: 2s;
+    animation-play-state: running;
 }
 
-.prev, .next{
-    cursor: pointer;
+.slideshow img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.slide-bar{
     position: absolute;
-    top: 36.5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    padding: 0 10%;
+    top: 40%;
+    z-index: 1;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(29, 29, 31, 0.5);
+}
+
+.slide-bar h1{
+    color: #fff;
+    font-size: 4vw;
+}
+
+.butt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: #fff;
     width: 3vw;
     height: 3vw;
-    color: white;
-    font-weight: 1000;
-    font-size: 1.5vw;
-    padding: 0.125% 0;
-    transition: 0.6s ease;
     border: 3px solid #fff;
     border-radius: 50%;
-    user-select: none;
-}
-  
-.next {
-    right: 10%;
-    border-radius: 50%;
-}
-  
-.prev {
-    text-align: right;
-    left: 10%;
-    border-radius: 50%;
 }
 
-.prev:hover, .next:hover {
-  background-color: #1d1d1f;
-}
-
-.text{
-    color: #ffffff;
-    /* font-family: 'Poppins', sans-serif; */
-    font-size: 6vw;
-    font-weight: 1000;
-    padding: 0px 12px;
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    background-color: rgba(29, 29, 31, 0.5);
-    text-align: center;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 0.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+@keyframes slideshow{
+    0%{
+        transform: translateX(0%);
+        animation-delay: 7s;
+    }
+    100%{
+        transform: translateX(-200%);
+        animation-delay: 7s;
+    }
 }
 
 .abouts{
@@ -683,6 +687,7 @@ body{
     height: 6.5vw;
     border-radius: 50%;
     z-index: 1;
+    transform: translateY(-25%);
     background-color: #d7d7d7;
 }
 
@@ -692,7 +697,7 @@ body{
     margin-top: 4.25%;
     width: 100%;
     height: 70%;
-    transform: translateY(-37.5%);
+    transform: translateY(0%);
     background-color: #000;
 }
 
@@ -704,6 +709,7 @@ body{
 }
 
 .heading h6 {
+    color: #fff;
     text-align: left;
     cursor: default;
     font-size: 1.5vw;
@@ -722,6 +728,7 @@ body{
 }
 
 .textSlides{
+    color: #fff;
     display: none;
 }
 
@@ -1050,7 +1057,7 @@ body{
     position: relative;
     display: flex;
     width:400%;
-    height: 60vh;
+    height: fit-content;
     margin-top: 2.5%;
     /* overflow-x: hidden; */
     background-color: #d7d7d7;
@@ -1060,8 +1067,7 @@ body{
     display: flex;
     /* Width is number of slides * 5% */
     width: 45%;
-    height: 25%;
-    margin-bottom: 1.25%;
+    height: fit-content;
     background-color: #d7d7d7;
     animation-play-state: running;
     animation: slide 15s infinite linear;
@@ -1080,7 +1086,8 @@ body{
 
 .slide{
     width: 20%;
-    min-height: 90%;
+    /* min-height: 90%; */
+    min-height: 40vh;
     height: fit-content;
     margin: 0 0.5%;
     background-color: #fff;
@@ -1095,10 +1102,12 @@ body{
 }
 
 .certificate{
+    position: relative;
     margin: 0% 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .certificate img{
@@ -1109,15 +1118,22 @@ body{
 }
 
 .cer{
-    width: 120%;
-    height: 100%;
+    width: 45%;
+    height: fit-content;
     border-radius: 5px;
-    color: #fff;
-    padding: 2.5% 10%;
-    margin: 10% 0;
+    text-align: center;
+    padding: 1% 2.5%;
+    margin: 1% auto;
     border: 3px solid #006600;
     background-color: #006600;
     transition: all 0.5s ease-in-out;
+
+    position: relative;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1vw;
+    bottom: -0;
 }
 
 .cer:hover{
@@ -1126,16 +1142,18 @@ body{
 }
 
 .cert-text{
+    position: relative;
     width: 105%;
-    height: 10vh;
+    height: 17.5vh;
     /* border: 3px solid black; */
     /* margin-bottom: 5%; */
 }
 .cert-text2{
     display: none;
+    color: rgba(29, 29, 31, 0);
+    transition: all 0.5s ease-in-out;
     width: 105%;
     height: 17.5vh;
-    margin-bottom: 5%;
     /* border: 3px solid black; */
 }
 
@@ -1152,6 +1170,7 @@ body{
 .cert-text2 p{
     line-height: 20px;
     margin: 0;
+    margin-bottom: 10%;
     text-align: justify;
 }
 
@@ -1161,16 +1180,6 @@ body{
     margin: 0 auto;
     padding: 0;
     transform: translateY(-10%);
-}
-
-.certificate a{
-    position: relative;
-    color: #006600;
-    font-weight: bolder;
-    text-decoration: none;
-    font-size: 1vw;
-    bottom: 0;
-    /* transform: translateY(-200%); */
 }
 
 @keyframes slide{
@@ -1192,11 +1201,8 @@ body{
     }
 }
 
-.main-slider:hover .one{
+.main-slider:hover .slider{
     animation-play-state: paused;
 }
 
-.main-slider:hover .two{
-    animation-play-state: paused;
-}
   
