@@ -1,40 +1,3 @@
-// const slider = document.querySelector(".horizontal-slider");
-// let isDown = false;
-// let startX;
-// let scrollLeft;
-
-// slider.addEventListener("mousedown", (e) => {
-//   isDown = true;
-//   slider.classList.add("active");
-//   startX = e.pageX - slider.offsetLeft;
-//   scrollLeft = slider.scrollLeft;
-// });
-
-// slider.addEventListener("mouseleave", () => {
-//   isDown = false;
-//   slider.classList.remove("active");
-// });
-
-// slider.addEventListener("mouseup", () => {
-//   isDown = false;
-//   slider.classList.remove("active");
-// });
-
-// slider.addEventListener("mousemove", (e) => {
-//   if (!isDown) return;
-//   e.preventDefault();
-//   const x = e.pageX - slider.offsetLeft;
-//   const walk = (x - startX) * 1; //scroll-fast
-//   slider.scrollLeft = scrollLeft - walk;
-// });
-
-// slider.addEventListener("scroll", () => {
-//   if (slider.scrollLeft + sliderWidth >= content.offsetWidth) {
-//     slider.scrollLeft = 0; // Reset scroll position to the beginning
-//   }
-// });
-
-
 function checkForm(){
   var name1 = document.getElementById("name").value;
   var email = document.getElementById("email").value;
@@ -90,48 +53,4 @@ function sendEmail(){
   );
 }
 
-const pictures = ["Pictures/Slider-01.jpg", "Pictures/Slider-02.jpg"];
-const qoutes = ["QA INTERNATIONAL 1", "QA INTERNATIONAL 2"];
-const slideshow = document.getElementsByClassName("slideshow");
-
-// for(var i = 0; i < 1; i++){
-//   classadd();
-//   const img = slideshow[0].querySelector("img");
-//     console.log(i);
-//     setInterval(function(){
-//       img.setAttribute("src", pictures[i]);
-//       console.log(pictures[i]);
-//     }, 5000);
-//   const img1 = slideshow[1].querySelector("img");
-//   console.log(i);
-//   img1.setAttribute("src", pictures[i]);
-//   console.log(pictures[i])
-//   setInterval(function(){
-//     classremove();   
-//   }, 7000);  
-// }
-slideshower()
-
-function slideshower(){
-  for(var i = 0; i < slideshow.length; i++){
-    classadd();
-    var img = slideshow[i].querySelector("img");
-    console.log(img);
-    console.log(pictures[i]);
-
-    setTimeout(function(){
-      img.setAttribute("src", pictures[i]);
-    }, 7000)
-  }
-}
-
-function classadd(){
-  slideshow[0].classList.add("animate");
-  slideshow[1].classList.add("animate");
-}
-
-function classremove(){
-  slideshow[0].classList.remove("animate");
-  slideshow[1].classList.remove("animate");
-}
     

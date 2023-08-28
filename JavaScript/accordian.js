@@ -26,7 +26,7 @@ function toggleCategory(categoryId) {
     const categories = document.querySelectorAll('.categories');
     let index = 0;
     categories.forEach(category => {
-        index++;
+        
         const slider = document.querySelectorAll('.slider');
         if (category.id === categoryId) {
             console.log(index);
@@ -62,6 +62,6 @@ function toggleCategory(categoryId) {
             const p = category.querySelector('.p');
             p.style.color = "";
         }
-
+        index++;
     });
 }

@@ -82,11 +82,11 @@ body{
 }
 
 .SM-icons a:hover .cls-4{
-    fill: #006600;
+    fill: #fff;
 }
 
 .SM-icons a:hover .cls-5{
-    fill: #fff;
+    fill: #006600;
 }
 
 .SM-icons svg{
@@ -278,7 +278,7 @@ body{
 .slideshow-container{
     display: flex;
     height: 100%;
-    width: 300%;
+    width: 250%;
 }
 .slideshow{
     height: 100%;
@@ -287,13 +287,13 @@ body{
 }
 .slideshow-dummy{
     height: 100%;
-    width: 100%;
+    width: 50%;
     overflow-y: hidden;
 }
 
 .animate{
-    animation: slideshow 5s ease-in-out infinite;
-    animation-delay: 2s;
+    animation: slideshow 4s ease-in-out ;
+    /* animation-delay: 2s; */
     animation-play-state: running;
 }
 
@@ -310,9 +310,9 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    border-left: 1px solid #d7d7d7;
-    border-right: 1px solid #d7d7d7;
+    justify-content: center;
+    /* border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7; */
     padding: 0 10%;
     top: 40%;
     z-index: 1;
@@ -342,11 +342,14 @@ body{
 @keyframes slideshow{
     0%{
         transform: translateX(0%);
-        animation-delay: 7s;
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
     }
     100%{
-        transform: translateX(-200%);
-        animation-delay: 7s;
+        transform: translateX(-150%);
+        opacity: 1;
     }
 }
 
@@ -1029,10 +1032,10 @@ body{
 }
 
 .footer-icons a:hover .cls-1{
-    fill: #fff;}
+    fill: #006600;}
 
 .footer-icons a:hover .cls-2{
-    fill: #006600;
+    fill: #fff;
 }
 
 .bottom-tag{
