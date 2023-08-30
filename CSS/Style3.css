@@ -74,20 +74,52 @@ body{
     cursor: pointer;
 }
 
-.cls-4{
+.fls-3{
     transition: 0.5s ease-in-out;
 }
 
-.cls-5{
+.fls-4{
     transition: 0.5s ease-in-out;
 }
 
-.SM-icons a:hover .cls-4{
+.SM-icons a:hover .fls-3{
+    fill: #4267B2;
+}
+
+.SM-icons a:hover .fls-4{
     fill: #fff;
 }
 
-.SM-icons a:hover .cls-5{
-    fill: #006600;
+.lls-3{
+    transition: 0.5s ease-in-out;
+}
+
+.lls-4{
+    transition: 0.5s ease-in-out;
+}
+
+.SM-icons a:hover .lls-3{
+    fill: #0077b5;
+}
+
+.SM-icons a:hover .lls-4{
+    fill: #fff;
+}
+
+.yls-3{
+    transition: 0.5s ease-in-out;
+}
+
+.yls-4{
+    transition: 0.5s ease-in-out;
+}
+
+.SM-icons a:hover .yls-3{
+    fill: #ff0000;
+}
+
+.SM-icons a:hover .yls-4{
+    fill: #fff;
 }
 
 .SM-icons svg{
@@ -645,19 +677,48 @@ h1::after{
     height: 7.5vh;
     width: auto;
 }
-
-.cls-1{
+.fls-1{
     transition: 0.5s ease-in-out;
 }
 
-.cls-2{  
+.fls-2{  
     transition: 0.5s ease-in-out;
 }
 
-.footer-icons a:hover .cls-1{
-    fill: #006600;}
+.footer-icons a:hover .fls-1{
+    fill: #4267B2;}
 
-.footer-icons a:hover .cls-2{
+.footer-icons a:hover .fls-2{
+    fill: #fff;
+}
+
+.lls-1{
+    transition: 0.5s ease-in-out;
+}
+
+.lls-2{  
+    transition: 0.5s ease-in-out;
+}
+
+.footer-icons a:hover .lls-1{
+    fill: #0077b5;}
+
+.footer-icons a:hover .lls-2{
+    fill: #fff;
+}
+
+.yls-1{
+    transition: 0.5s ease-in-out;
+}
+
+.yls-2{  
+    transition: 0.5s ease-in-out;
+}
+
+.footer-icons a:hover .yls-1{
+    fill: #ff0000;}
+
+.footer-icons a:hover .yls-2{
     fill: #fff;
 }
 
