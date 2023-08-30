@@ -1,7 +1,11 @@
+html{
+    overflow-y: scroll;
+}
+
 body{
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    overflow-x: hidden;
+    overflow-x: visible;
 }
 
 .header{
@@ -340,23 +344,24 @@ body{
     }
 } 
 
-.box{
-    width: 100vw;
-    height: 205vh;
+.box1{
+    width: 100%;
+    min-height: 75vh;
+    height: fit-content;
     background-color: #d7d7d7;
 }
 
 .floater{
     display: flex;
-    z-index: 1;
+    z-index: 5;
     width: 90%;
-    height: 5%;
+    height: 7.5vh;
     background-color: #fff;
     margin: 0 auto;
     border-radius: 10px;
-    position: relative;
-    top: -2.5%;
-    /* transform: translateY(-50%); */
+    /* position: relative;
+    top: -55%; */
+    transform: translateY(-50%);
 }
 
 .tab{
@@ -364,7 +369,7 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .inner{
@@ -425,6 +430,21 @@ body{
 .sls-1{
     transition: all 0.5s ease-in-out;
 }
+.sls-2{
+    transition: all 0.5s ease-in-out;
+}
+.sls-3{
+    transition: all 0.5s ease-in-out;
+}
+.sls-4{
+    transition: all 0.5s ease-in-out;
+}
+.sls-5{
+    transition: all 0.5s ease-in-out;
+}
+.sls-6{
+    transition: all 0.5s ease-in-out;
+}
 
 .tab:hover .sls-1{
     stroke:#fff;
@@ -434,8 +454,56 @@ body{
     stroke:#fff;
 }
 
+.tab:hover .sls-2{
+    stroke:#fff;
+}
+
+.active .sls-2{
+    stroke:#fff;
+}
+
+.tab:hover .sls-3{
+    stroke:#fff;
+    fill: #fff;
+}
+
+.active .sls-3{
+    stroke:#fff;
+    fill: #fff;
+}
+
+.tab:hover .sls-4{
+    stroke:#fff;
+    fill: #fff;
+}
+
+.active .sls-4{
+    stroke:#fff;
+    fill: #fff;
+}
+
+.tab:hover .sls-5{
+    stroke:#fff;
+    fill:#fff;
+}
+
+.active .sls-5{
+    stroke:#fff;
+    fill:#fff;
+}
+
+.tab:hover .sls-6{
+    stroke:#fff;
+    fill:#fff;
+}
+
+.active .sls-6{
+    stroke:#fff;
+    fill:#fff;
+}
+
 .content h2{
-    margin: auto 1.5%;
+    margin: auto 0.5%;
     white-space: wrap;
     color: black;
     font-size: 1vw;
@@ -444,31 +512,27 @@ body{
 
 .tabs{
     z-index: 1;
-    width: 50%;
+    width: 51%;
     height: 100%;
-    background-color: green;
+    background-color: #006600;
     transition: all 0.5s ease-in-out;
 }
 
 .tab:hover .one{
-    transform: translateX(100%);
+    transform: translateX(98.5%);
 }
 
 .tab:hover .two{
-    transform: translateX(-100%);
+    transform: translateX(-98.5%);
 }
 
 .active .one{
-    transform: translateX(100%);
+    transform: translateX(98.5%);
 }
 
 .active .two{
-    transform: translateX(-100%);
+    transform: translateX(-98.5%);
 }
-
-/* .tab:hover .circle{
-    background-color: white;
-} */
 
 .tab:hover .content h2{
     color: white;
@@ -480,12 +544,18 @@ body{
 
 .services{
     position: relative;
-    top: -10%;
+    top: 0%;
     width: 100%;
-    height: 100%;
-    padding-top: 10%;
+    height: fit-content;
+    padding-top: 2.5%;
 }
 
+.service{
+    width: 80%;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+}
 
 
 .footer{
