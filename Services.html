@@ -256,7 +256,7 @@
         >
           <div class="inner">
             <div class="tabs one"></div>
-            <div class="overlay">
+            <div class="overlay" onclick="changeSlide(1)">
               <div class="content">
                 <div class="circle">
                   <svg
@@ -282,7 +282,7 @@
         <div class="tab">
           <div class="inner">
             <div class="tabs one"></div>
-            <div class="overlay">
+            <div class="overlay" onclick="changeSlide(2)">
               <div class="content">
                 <div class="circle">
                   <svg
@@ -380,7 +380,7 @@
         <div class="tab">
           <div class="inner">
             <div class="tabs one"></div>
-            <div class="overlay">
+            <div class="overlay"  onclick="changeSlide(3)">
               <div class="content">
                 <div class="circle">
                   <svg
@@ -466,7 +466,7 @@
         <div class="tab">
           <div class="inner">
             <div class="tabs one"></div>
-            <div class="overlay">
+            <div class="overlay" onclick="changeSlide(4)">
               <div class="content">
                 <div class="circle">
                   <svg
@@ -497,7 +497,7 @@
         <div class="tab">
           <div class="inner">
             <div class="tabs one"></div>
-            <div class="overlay">
+            <div class="overlay" onclick="changeSlide(5)">
               <div class="content">
                 <div class="circle">
                   <svg
@@ -563,7 +563,7 @@
         >
           <div class="inner">
             <div class="tabs one"></div>
-            <div class="overlay">
+            <div class="overlay" onclick="changeSlide(6)">
               <div class="content">
                 <div class="circle">
                   <svg
@@ -959,12 +959,21 @@
     console.log(heading1.innerHTML);
     console.log(heading2.innerHTML);
     var m = 0;
-    setInterval(function () {
-      tab[m % 6].classList.remove("active");
-      m++;
-      tab[m % 6].classList.add("active");
+
+    function changeSlide(n) {
+    //   alert("Click Registered");
+      tab[m].classList.remove("active");
+      m = n-1;
+      tab[m].classList.add("active");
       serviceshower(m);
-    }, 8000);
+    }
+
+    // setInterval(function () {
+    //   tab[m % 6].classList.remove("active");
+    //   m++;
+    //   tab[m % 6].classList.add("active");
+    //   serviceshower(m);
+    // }, 8000);
 
     function serviceshower(n) {
       classadder();
@@ -973,7 +982,7 @@
         paragraph2.innerHTML = paragraphs[n % 6];
         heading1.innerHTML = headings[n % 6];
         paragraph1.innerHTML = paragraphs[n % 6];
-      }, 1000);
+      }, 1250);
       setTimeout(function () {
         classremover();
       }, 3500);
