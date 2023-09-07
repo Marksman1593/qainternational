@@ -380,7 +380,7 @@
         <div class="tab">
           <div class="inner">
             <div class="tabs one"></div>
-            <div class="overlay"  onclick="changeSlide(3)">
+            <div class="overlay" onclick="changeSlide(3)">
               <div class="content">
                 <div class="circle">
                   <svg
@@ -961,9 +961,9 @@
     var m = 0;
 
     function changeSlide(n) {
-    //   alert("Click Registered");
+      //   alert("Click Registered");
       tab[m].classList.remove("active");
-      m = n-1;
+      m = n - 1;
       tab[m].classList.add("active");
       serviceshower(m);
     }
@@ -997,7 +997,5 @@
       service[1].classList.remove("animation");
       service[2].classList.remove("animation");
     }
-
-    function dataChanger(n) {}
   </script>
 </html>

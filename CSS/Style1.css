@@ -130,8 +130,11 @@ body {
 
 .email {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   top: 0;
-  right: 1vw;
+  right: 0;
   height: 100%;
   width: 17.5%;
 }
@@ -139,21 +142,17 @@ body {
 .email svg {
   display: inline;
   position: relative;
-  height: 75%;
-  width: auto;
-  top: 10%;
-  margin-left: 2.5%;
+  height: 7.5vw;
+  width: 7.5vw;
 }
 
 .email a {
   cursor: pointer;
   display: inline;
-  position: absolute;
-  top: 0.5vh;
-  margin-top: 0.25vh;
   padding-left: 2.5%;
   font-weight: 1000;
   font-size: 0.75vw;
+  vertical-align: middle;
   color: white;
 }
 
@@ -173,7 +172,7 @@ body {
   position: relative;
   width: 100%;
   margin: auto 0;
-  font-size: 25px;
+  font-size: 1.5vw;
   font-weight: 1000;
 }
 
@@ -1269,4 +1268,113 @@ body {
 
 .main-slider:hover .slider {
   animation-play-state: paused;
+}
+
+.header2{
+  display: none;
+  z-index: 5;
+  width: 100%;
+  height: 10%;
+  position: relative;
+  top: 0;
+  border: 3px solid black;
+}
+
+.top-box2{
+  width: 100%;
+  height: 20%;
+  /* border: 3px solid green; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-box2 a{
+  margin-left: 1%;
+  font-size: 3vw;
+}
+
+.middle-box2{
+  width: 100%;
+  height: 20%;
+  background-color: #006600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle-box2 p{
+  color: #fff;
+  font-size: 3vw;
+  margin: 0;
+  margin-left: 1%;
+}
+
+.middle-box2 a{
+  color: #fff;
+  font-size: 3vw;
+  margin: 0;
+  margin-left: 1%;
+}
+
+.bottom-box2{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom-box2 img{
+  height: 90%;
+  width: 78%;
+  margin-left: 2%;
+}
+
+.burger{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-patty{
+  margin: 2.5% 0;
+  width: 50%;
+  height: 7.5%;
+  border-radius: 50px;
+  background-color: #000;
+  transition: all 1s ease-in-out;
+}
+
+.patty1{
+  transform: translateY(175%) rotate(45deg);
+}
+
+.patty2{
+  transform: translateY(0%) rotate(-45deg);
+}
+
+.patty3{
+  transform: translateY(200%);
+  opacity: 0;
+}
+
+
+
+
+
+@media (max-width: 1000px) {
+  .header{
+    display: none;
+  }
+
+  .header2{
+    display: block;
+  }
 }
