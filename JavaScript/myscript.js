@@ -3,14 +3,18 @@ window.onscroll = function () {
 };
 
 var header = document.getElementById("myHeader");
+var header1 = document.getElementById("myHeader1");
 
 var sticky = header.offsetTop;
+var sticky1 = header1.offsetTop;
 
 function myFunction() {
-  if (window.scrollY > sticky) {
+  if (window.scrollY > sticky || window.scrollY > sticky1) {
     header.classList.add("sticky");
+    header1.classList.add("sticky1");
   } else {
     header.classList.remove("sticky");
+    header1.classList.remove("sticky1");
   }
 }
 
