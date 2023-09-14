@@ -177,7 +177,14 @@ function moreDetail(slider1, num) {
     cert_text2.style.color = "";
     cer.innerHTML = "View Detail";
   } else {
-    slide.style.minHeight = "65vh";
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+      slide.style.minHeight = "40vh";
+      // Mobile view
+    } else {
+      slide.style.minHeight = "65vh";
+      // Desktop view
+    }
+    
     setTimeout(() => {
       cert_text2.style.display = "block";
     }, 250);
