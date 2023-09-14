@@ -178,7 +178,7 @@ function moreDetail(slider1, num) {
     cer.innerHTML = "View Detail";
   } else {
     if (window.matchMedia("(max-width: 1000px)").matches) {
-      slide.style.minHeight = "40vh";
+      slide.style.Height = "fit-content";
       // Mobile view
     } else {
       slide.style.minHeight = "65vh";

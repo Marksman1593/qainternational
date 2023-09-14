@@ -1055,6 +1055,10 @@
     height: 15vh;
   }
 
+  .cert-text2{
+    height: 10vh;
+  }
+
   .cert-text h2{
     font-size: 3vw;
   }
