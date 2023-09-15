@@ -206,7 +206,12 @@ function moreDetail(slider1, num) {
     cert_text21.style.color = "";
     cer1.innerHTML = "View Detail";
   } else {
-    slide1.style.minHeight = "65vh";
+    if (window.matchMedia("(max-width: 1000px)").matches) {
+      slide1.style.Height = "fit-content";
+      // Mobile view
+    } else {
+      slide1.style.minHeight = "65vh";
+    }
     setTimeout(() => {
       cert_text21.style.display = "block";
     }, 250);

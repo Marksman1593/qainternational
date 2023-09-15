@@ -100,7 +100,7 @@
   height: 60%;
 }
 
-.services1{
+.services1 {
   width: 100%;
   height: 80%;
   display: none;
@@ -109,13 +109,13 @@
   align-items: center;
 }
 
-.services1 h1{
+.services1 h1 {
   font-size: 10vw;
   margin: 0;
   padding: 0;
 }
 
-.service1{
+.service1 {
   width: 90%;
   height: 18%;
   display: flex;
@@ -123,7 +123,7 @@
   justify-content: right;
 }
 
-.circle1{
+.circle1 {
   position: absolute;
   width: 20vw;
   height: 20vw;
@@ -136,14 +136,14 @@
   z-index: 1;
 }
 
-.circle11{
+.circle11 {
   width: 17.5vw;
   height: 17.5vw;
   border-radius: 50%;
   background-color: #fff;
 }
 
-.service11{
+.service11 {
   width: 90%;
   height: 100%;
   border-radius: 25px;
@@ -461,7 +461,7 @@
   font-style: italic;
 }
 
-.reviews1{
+.reviews1 {
   display: none;
   position: relative;
   width: 100%;
@@ -469,7 +469,7 @@
   border: 5px solid #fff;
 }
 
-.rcircle1{
+.rcircle1 {
   position: absolute;
   left: 5%;
   top: 2.5%;
@@ -482,14 +482,14 @@
   background-color: #1d1d1f;
 }
 
-.rcircle11{
+.rcircle11 {
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
   background-color: #fff;
 }
 
-.review1{
+.review1 {
   width: 99%;
   height: 90%;
   margin: 0 auto;
@@ -831,7 +831,7 @@
   transform: translateX(0%);
 }
 
-.certificates{
+.certificates {
   min-height: 80vh;
   height: fit-content;
   background-color: #d7d7d7;
@@ -988,86 +988,101 @@
 }
 
 @media (max-width: 1000px) {
-  .aboutus{
+  .aboutus {
     min-height: 65vh;
     height: fit-content;
     padding: 5% 0;
   }
 
-  .about{
+  .about {
     top: 2.5%;
     left: 2.5%;
-    width: 95%; 
+    width: 95%;
   }
 
-  .pics{
+  .pics {
     display: none;
   }
 
-  .about .text1 h6{
+  .about .text1 h6 {
     font-size: 7vw;
     margin-bottom: 0.5vh;
   }
 
-  .about .text1 h6::after{
+  .about .text1 h6::after {
     top: 7.5%;
     left: 2%;
     width: 50%;
   }
 
-  .about .text1 p{
+  .about .text1 p {
     font-size: 3vw;
     margin-top: 0.5vh;
   }
 
-  .services{
+  .services {
     display: none;
   }
 
-  .services1{
+  .services1 {
     display: flex;
   }
 
-  .reviews{
+  .reviews {
     display: none;
   }
 
-  .reviews1{
+  .reviews1 {
     display: block;
   }
 
-  .certificates{
-    min-height: 50vh;
+  .certificates {
+    min-height: 40vh;
+    padding-bottom: 5%;
   }
 
-  .main-slider{
+  .certificates h1{
+    font-size: 5vw;
+    margin-left: 5%;
+  }
+
+  .main-slider {
     width: 1000%;
     margin-top: 5%;
   }
 
-  .slide{
+  .slide {
     width: 20%;
     min-height: 0;
   }
 
-  .certificate img{
+  .certificate img {
     width: auto;
     height: 15vh;
   }
 
-  .cert-text2{
-    height: 10vh;
+  .cert-text{
+    height: 12.5vh;
   }
 
   .cert-text h2{
     font-size: 3vw;
   }
 
-  .cert-text p{
+  .cert-text2 {
+    height: fit-content;
+  }
+
+  .cert-text2 p{
+    font-size: 2vw;
+    padding: 5% 0;
+  }
+
+  .cert-text p {
     font-size: 2vw;
   }
 
-  .cer{
+  .cer {
     margin-top: 15%;
     font-size: 3vw;
   }
