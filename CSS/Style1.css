@@ -1054,6 +1054,7 @@
   .slide {
     width: 20%;
     min-height: 0;
+    padding-bottom: 0.5%;
   }
 
   .certificate img {
@@ -1084,6 +1085,66 @@
 
   .cer {
     margin-top: 15%;
+    margin-bottom: 5%;
+    font-size: 3vw;
+  }
+
+  .content{
+    display: block;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .left h6{
+    font-size: 4vw;
+  }
+
+  .company{
+    min-height: 0;
+  }
+
+  .company h6{
+    font-size: 3vw;
+    margin: 0.125vh auto;
+    padding-top: 0vh;
+  }
+
+  .image{
+    width: 1.5vh;
+    height: 1.5vh;
+  }
+
+  .inner-text2{
+    width: 100%;
+    font-size: 2vw;
+  }
+  
+  .right{
+    width: 100%;
+    padding-top: 2.5%;
+  }
+
+  .right h6{
+    font-size: 3vw;
+  }
+
+  .inputs h1{
+    font-size: 2vw;
+  }
+
+  .inputs input{
+    font-size: 2vw;
+  }
+
+  .inputs select{
+    height: 2vh;
+    font-size: 2vw;
+  }
+
+  .submit{
+    height: 4vh;
     font-size: 3vw;
   }
 }
