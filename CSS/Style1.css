@@ -1144,6 +1144,15 @@
     font-size: 2vw;
   }
 
+  .newsletter{
+    width: 40px;
+    height: 40px;
+  }
+
+  .checkbox-container label{
+    font-size: 3vw;
+  }
+
   .submit {
     height: 4vh;
     font-size: 3vw;
