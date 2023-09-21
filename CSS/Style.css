@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   height: 9.5vh;
@@ -566,5 +570,80 @@ body {
 
   .slide-bar h1 {
     font-size: 7vw;
+  }
+
+  .footer {
+    height: 50%;
+  }
+
+  .vsections {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5%;
+  }
+
+  .vsection {
+    height: 22.5%;
+    width: 100%;
+  }
+
+  .vsection:first-child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .vsection img {
+    width: 30%;
+  }
+
+  .vsections .vsection:first-child p {
+    width: 100%;
+    height: 80%;
+    margin-top: 8.5%;
+    margin-left: 5%;
+    font-size: 2vw;
+    white-space: nowrap;
+  }
+
+  .footer-icons {
+    margin-top: 3.5%;
+    margin-left: 15%;
+    height: 25%;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+  }
+
+  .footer-icons a{
+    position: relative;
+    left: 0;
+    height: 100%;
+  }
+
+  .footer-icons a svg{
+    height: 2.5vh;
+    width: auto;
+  }
+
+  .vsections .vsection p{
+    font-size: 1.5vw;
+  }
+
+  .line{
+    margin-left: 2.5%;
+  }
+
+  .bottom-tag{
+    height: 1.25%;
+  }
+
+  .TM{
+    font-size: 2vw;
+    width: 35%;
+    height: 50%;
+    text-align: center;
+    white-space: nowrap;
   }
 }
