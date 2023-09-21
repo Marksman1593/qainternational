@@ -1211,4 +1211,16 @@
   .line{
     margin-left: 2.5%;
   }
+
+  .bottom-tag{
+    height: 1.25%;
+  }
+
+  .TM{
+    font-size: 2vw;
+    width: 35%;
+    height: 50%;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
