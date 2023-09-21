@@ -715,6 +715,7 @@
 
 .vsection:first-child {
   display: block;
+  width: 25%;
 }
 
 .line {
@@ -1041,7 +1042,7 @@
     padding-bottom: 5%;
   }
 
-  .certificates h1{
+  .certificates h1 {
     font-size: 5vw;
     margin-left: 5%;
   }
@@ -1062,11 +1063,11 @@
     height: 15vh;
   }
 
-  .cert-text{
+  .cert-text {
     height: 12.5vh;
   }
 
-  .cert-text h2{
+  .cert-text h2 {
     font-size: 3vw;
   }
 
@@ -1074,7 +1075,7 @@
     height: fit-content;
   }
 
-  .cert-text2 p{
+  .cert-text2 p {
     font-size: 2vw;
     padding: 5% 0;
   }
@@ -1089,62 +1090,125 @@
     font-size: 3vw;
   }
 
-  .content{
+  .content {
     display: block;
   }
 
-  .left{
+  .left {
     width: 100%;
   }
 
-  .left h6{
+  .left h6 {
     font-size: 4vw;
   }
 
-  .company{
+  .company {
     min-height: 0;
   }
 
-  .company h6{
+  .company h6 {
     font-size: 3vw;
     margin: 0.125vh auto;
     padding-top: 0vh;
   }
 
-  .image{
+  .image {
     width: 1.5vh;
     height: 1.5vh;
   }
 
-  .inner-text2{
+  .inner-text2 {
     width: 100%;
     font-size: 2vw;
   }
-  
-  .right{
+
+  .right {
     width: 100%;
     padding-top: 2.5%;
   }
 
-  .right h6{
+  .right h6 {
     font-size: 3vw;
   }
 
-  .inputs h1{
+  .inputs h1 {
     font-size: 2vw;
   }
 
-  .inputs input{
+  .inputs input {
     font-size: 2vw;
   }
 
-  .inputs select{
+  .inputs select {
     height: 2vh;
     font-size: 2vw;
   }
 
-  .submit{
+  .submit {
     height: 4vh;
     font-size: 3vw;
+  }
+
+  .footer {
+    height: 50%;
+  }
+
+  .vsections {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5%;
+  }
+
+  .vsection {
+    height: 22.5%;
+    width: 100%;
+  }
+
+  .vsection:first-child {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .vsection img {
+    width: 30%;
+  }
+
+  .vsections .vsection:first-child p {
+    width: 100%;
+    height: 80%;
+    margin-top: 8.5%;
+    margin-left: 5%;
+    font-size: 2vw;
+    white-space: nowrap;
+  }
+
+  .footer-icons {
+    margin-top: 3.5%;
+    margin-left: 15%;
+    height: 25%;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+  }
+
+  .footer-icons a{
+    position: relative;
+    left: 0;
+    height: 100%;
+  }
+
+  .footer-icons a svg{
+    height: 2.5vh;
+    width: auto;
+  }
+
+  .vsections .vsection p{
+    font-size: 1.75vw;
+  }
+
+  .line{
+    margin-left: 2.5%;
   }
 }
