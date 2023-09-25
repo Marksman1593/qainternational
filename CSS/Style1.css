@@ -95,6 +95,11 @@
   font-weight: normal;
 }
 
+.services-reviews{
+  height: 120vh;
+  overflow-y: hidden;
+}
+
 .services {
   width: 100%;
   height: 60%;
@@ -102,7 +107,7 @@
 
 .services1 {
   width: 100%;
-  height: 80%;
+  height: 85%;
   display: none;
   flex-direction: column;
   justify-content: space-evenly;
@@ -110,14 +115,14 @@
 }
 
 .services1 h1 {
-  font-size: 10vw;
+  font-size: 8vw;
   margin: 0;
   padding: 0;
 }
 
 .service1 {
-  width: 90%;
-  height: 18%;
+  width: 95%;
+  height: 15%;
   display: flex;
   align-items: center;
   justify-content: right;
@@ -128,7 +133,7 @@
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
-  left: 5%;
+  left: 2.5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,7 +153,25 @@
   height: 100%;
   border-radius: 25px;
   background-color: #006600;
+  padding: 2.5%;
+  padding-left: 12.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   /* transform: translateX(-15%); */
+}
+
+.service11 h4{
+  font-size: 3vw;
+  color: #fff;
+  margin: 0;
+}
+
+.service11 p{
+  margin: 0;
+  color: #fff;
+  text-align: justify;
+  font-size: 2.5vw;
 }
 
 .services h6 {
@@ -381,6 +404,18 @@
   transform: scale(1.02) translateY(-5%);
 }
 
+.circle11{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle11 svg{
+  width: 80%;
+  height: auto;
+  margin-bottom: 15%;
+}
+
 .reviews {
   position: relative;
   width: 100%;
@@ -465,7 +500,7 @@
   display: none;
   position: relative;
   width: 100%;
-  height: 17%;
+  height: 12%;
   border: 5px solid #fff;
 }
 
