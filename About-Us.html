@@ -181,8 +181,16 @@
         </div>
       </div>
     </div>
-    <div class="box" style="display: flex">
-      <div class="left">
+    <div class="tab box">
+      <div class="buttons" onclick="changeslide(1)">
+        HISTORY
+      </div>
+      <div class="buttons" onclick="changeslide(2)">
+        TIMELINE
+      </div>
+    </div>
+    <div class="box" style="display: flex;">
+      <div class="left" id="history">
         <div class="con">
           <h1 class="H">About Us -</h1>
           <!-- <h3 class="SH">Our Company Story</h3>
@@ -250,14 +258,14 @@
           </p>
         </div>
       </div>
-      <div class="right">
+      <div class="right"  id="timeline">
         <div class="section" style="height: 5vh">
           <div class="floater-space">
             <h3 style="margin: 1% 0; margin-left: 10%">
               Our Company Histroy Timeline
             </h3>
           </div>
-          <div class="line-space">
+          <div class="line-space" style="display: none;">
             <div class="lines"></div>
           </div>
         </div>
@@ -493,7 +501,7 @@
     </div>
     <div class="footer">
       <div class="vsections">
-        <div class="vsection" style="width: 25%">
+        <div class="vsection">
           <img src="Logo\AISQA-Logo.svg" />
           <p>
             We work with a passion of taking<br />challenges and creating new
@@ -627,6 +635,8 @@
     </div>
   </body>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="JavaScript/burger.js"></script>
+  <script src="JavaScript/myscript.js"></script>
   <script src="JavaScript/timeline.js"></script>
   <script src="JavaScript/slideshow.js"></script>
 </html>

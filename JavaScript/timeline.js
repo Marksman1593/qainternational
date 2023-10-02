@@ -21,3 +21,17 @@ function handleIntersection5(entries, observer) {
   floaters.forEach(element => {
       observer5.observe(element);
   });
+
+const history1 = document.getElementById("history");
+const timeline = document.getElementById("timeline");
+
+  function changeslide(num){
+    if(num == 2){
+        timeline.style.display = "block";
+        history1.style.display = "none";
+    }
+    else{
+        history1.style.display = "block";
+        timeline.style.display = "none";
+    }
+  }
